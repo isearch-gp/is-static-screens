@@ -1,301 +1,1097 @@
 <!DOCTYPE html>
 <!-- saved from url=(0028)http://localhost:4200/search -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>GpAngular2</title>
-    <!--<base href="/">--><base href=".">
+<html lang="en">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
-    <link rel=" icon" href="assets/images/iS_LOGO_CMYK-2-125x125.png" sizes="32x32">
-    <link rel="icon" href="assets/images/iS_LOGO_CMYK-2.png" sizes="192x192">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/iS_LOGO_CMYK-2.png">
-    <meta name="msapplication-TileImage" content="assets/images/iS_LOGO_CMYK-2.png">
-    <!--
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>GpAngular2</title>
+  <!--<base href="/">-->
+  <base href=".">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
+  <link rel=" icon" href="assets/images/iS_LOGO_CMYK-2-125x125.png" sizes="32x32">
+  <link rel="icon" href="assets/images/iS_LOGO_CMYK-2.png" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/iS_LOGO_CMYK-2.png">
+  <meta name="msapplication-TileImage" content="assets/images/iS_LOGO_CMYK-2.png">
+  <!--
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     -->
-    <!--
+  <!--
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-SuperRandom'; font-src https://themes.googleusercontent.com ">
     -->
-    <!-- https://stackoverflow.com/questions/18447970/content-security-policy-data-not-working-for-base64-images-in-chrome-28 -->
-    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; font-src &#39;self&#39; data: fonts.googleapis.com; style-src &#39;self&#39; &#39;unsafe-inline&#39; data: fonts.googleapis.com; connect-src *; img-src &#39;self&#39; data:; frame-src *;">
+  <!-- https://stackoverflow.com/questions/18447970/content-security-policy-data-not-working-for-base64-images-in-chrome-28 -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; font-src &#39;self&#39; data: fonts.googleapis.com; style-src &#39;self&#39; &#39;unsafe-inline&#39; data: fonts.googleapis.com; connect-src *; img-src &#39;self&#39; data:; frame-src *;">
 
-    <!--
+  <!--
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; font-src 'self' data:; style-src 'self' 'unsafe-inline' data: ; connect-src *; img-src 'self' data:; frame-src *;">
     -->
 
-<!--
+  <!--
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
 -->
-    <link href="bootstrap.css" rel="stylesheet">
-    <link href="search.css" rel="stylesheet">
-	</head>
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="search.css" rel="stylesheet">
+</head>
 
 <body>
-    <app-root _nghost-qaq-c115="" ng-version="9.1.2"><router-outlet _ngcontent-qaq-c115=""></router-outlet><app-search-page _nghost-qaq-c133=""><div _ngcontent-qaq-c133="" class="Top"><app-header _ngcontent-qaq-c133="" _nghost-qaq-c135=""><nav _ngcontent-qaq-c135="" ngbnavbar="" class="navbar navbar-expand-md isearch-bg"><a _ngcontent-qaq-c135="" href="http://localhost:4200/#" class="navbar-brand"><img _ngcontent-qaq-c135="" src="./GpAngular2search_files/IterativeSearch_LOGO_RGB.png" i="" height="70px"></a><button _ngcontent-qaq-c135="" data-toggle="collapse" type="button" aria-controls="navbarContent" aria-label="Toggle navigation" class="navbar-toggler ml-auto custom-toggler" aria-expanded="false"><span _ngcontent-qaq-c135="" class="navbar-toggler-icon"></span></button><div _ngcontent-qaq-c135="" id="navbarContent" class="navbar-collapse justify-content-end collapse"><div _ngcontent-qaq-c135="" class="navbar-nav"><div _ngcontent-qaq-c135="" class="nav-item dropdown"><div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135="" aria-haspopup="true" id="dropdownMenu1" ngbdropdowntoggle="" class="dropdown-toggle nav-link" aria-expanded="false">Settings</a><div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu1" class="dropdown-menu"><button _ngcontent-qaq-c135="" class="dropdown-item">Settings</button><button _ngcontent-qaq-c135="" class="dropdown-item disabled">Feedback</button><button _ngcontent-qaq-c135="" class="dropdown-item">About</button></div></div></div></div><div _ngcontent-qaq-c135="" class="nav-item dropdown"><div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135="" aria-haspopup="true" id="dropdownMenu2" ngbdropdowntoggle="" class="dropdown-toggle nav-link" aria-expanded="false"> Profile</a><div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu2" class="dropdown-menu"><button _ngcontent-qaq-c135="" class="dropdown-item disabled">My Account</button><button _ngcontent-qaq-c135="" class="dropdown-item">Clear Data</button><button _ngcontent-qaq-c135="" class="dropdown-item disabled">Log Out</button></div></div></div></div></nav></app-header></div><section _ngcontent-qaq-c133="" id="container" class="Container"><div _ngcontent-qaq-c133="" class="Query"><ngb-tabset _ngcontent-qaq-c133="" type="pills" class="tabset1" ng-reflect-type="pills"><ul role="tablist" class="justify-content-start nav nav-pills"><li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link active" id="active" aria-controls="active-panel" aria-selected="true" aria-disabled="false"> Active<!--bindings={
+  <app-root _nghost-qaq-c115="" ng-version="9.1.2">
+    <router-outlet _ngcontent-qaq-c115=""></router-outlet>
+    <app-search-page _nghost-qaq-c133="">
+      <div _ngcontent-qaq-c133="" class="Top">
+        <app-header _ngcontent-qaq-c133="" _nghost-qaq-c135="">
+          <nav _ngcontent-qaq-c135="" ngbnavbar="" class="navbar navbar-expand-md isearch-bg"><a _ngcontent-qaq-c135=""
+              href="http://localhost:4200/#" class="navbar-brand"><img _ngcontent-qaq-c135=""
+                src="./GpAngular2search_files/IterativeSearch_LOGO_RGB.png" i="" height="70px"></a><button
+              _ngcontent-qaq-c135="" data-toggle="collapse" type="button" aria-controls="navbarContent"
+              aria-label="Toggle navigation" class="navbar-toggler ml-auto custom-toggler" aria-expanded="false"><span
+                _ngcontent-qaq-c135="" class="navbar-toggler-icon"></span></button>
+            <div _ngcontent-qaq-c135="" id="navbarContent" class="navbar-collapse justify-content-end collapse">
+              <div _ngcontent-qaq-c135="" class="navbar-nav">
+                <div _ngcontent-qaq-c135="" class="nav-item dropdown">
+                  <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135=""
+                      aria-haspopup="true" id="dropdownMenu1" ngbdropdowntoggle="" class="dropdown-toggle nav-link"
+                      aria-expanded="false">Settings</a>
+                    <div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu1"
+                      class="dropdown-menu"><button _ngcontent-qaq-c135=""
+                        class="dropdown-item">Settings</button><button _ngcontent-qaq-c135=""
+                        class="dropdown-item disabled">Feedback</button><button _ngcontent-qaq-c135=""
+                        class="dropdown-item">About</button></div>
+                  </div>
+                </div>
+              </div>
+              <div _ngcontent-qaq-c135="" class="nav-item dropdown">
+                <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135=""
+                    aria-haspopup="true" id="dropdownMenu2" ngbdropdowntoggle="" class="dropdown-toggle nav-link"
+                    aria-expanded="false"> Profile</a>
+                  <div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                    <button _ngcontent-qaq-c135="" class="dropdown-item disabled">My Account</button><button
+                      _ngcontent-qaq-c135="" class="dropdown-item">Clear Data</button><button _ngcontent-qaq-c135=""
+                      class="dropdown-item disabled">Log Out</button></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </app-header>
+      </div>
+      <section _ngcontent-qaq-c133="" id="container" class="Container">
+        <div _ngcontent-qaq-c133="" class="Query">
+          <ngb-tabset _ngcontent-qaq-c133="" type="pills" class="tabset1" ng-reflect-type="pills">
+            <ul role="tablist" class="justify-content-start nav nav-pills">
+              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link active" id="active"
+                  aria-controls="active-panel" aria-selected="true" aria-disabled="false"> Active
+                  <!--bindings={
   "ng-reflect-ng-template-outlet": null
-}--></a></li><li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="archive" aria-selected="false" aria-disabled="false"> Archive<!--bindings={
+}--></a></li>
+              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="archive"
+                  aria-selected="false" aria-disabled="false"> Archive
+                  <!--bindings={
   "ng-reflect-ng-template-outlet": null
-}--></a></li><li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="flagged" aria-selected="false" aria-disabled="false"> Flagged<!--bindings={
+}--></a></li>
+              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="flagged"
+                  aria-selected="false" aria-disabled="false"> Flagged
+                  <!--bindings={
   "ng-reflect-ng-template-outlet": null
-}--></a></li><!--bindings={
+}--></a></li>
+              <!--bindings={
   "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></ul><div class="tab-content"><div role="tabpanel" class="active tab-pane" id="active-panel" aria-labelledby="active"><div _ngcontent-qaq-c133="" class="Query2"><app-queries _ngcontent-qaq-c133="" _nghost-qaq-c134="" ng-reflect-tab-status="active"><h4 _ngcontent-qaq-c134="">Search Terms<span _ngcontent-qaq-c134="" class="float-right">Date&nbsp;&nbsp;&nbsp;Notes</span></h4><div _ngcontent-qaq-c134="" class="queryBox"><div _ngcontent-qaq-c134="" class="row"><div _ngcontent-qaq-c134="" class="col"><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="active tab-pane" id="active-panel" aria-labelledby="active">
+                <div _ngcontent-qaq-c133="" class="Query2">
+                  <app-queries _ngcontent-qaq-c133="" _nghost-qaq-c134="" ng-reflect-tab-status="active">
+                    <h4 _ngcontent-qaq-c134="">Search Terms<span _ngcontent-qaq-c134=""
+                        class="float-right">Date&nbsp;&nbsp;&nbsp;Notes</span></h4>
+                    <div _ngcontent-qaq-c134="" class="queryBox">
+                      <div _ngcontent-qaq-c134="" class="row">
+                        <div _ngcontent-qaq-c134="" class="col">
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134="">
+                                <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
+}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
+                                <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">corona virus</span><span _ngcontent-qaq-c134="" class="float-right">2020-03-04</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">corona virus</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2020-03-04</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <div _ngcontent-qaq-c134="">
+                                <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
+}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
+                                <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item active"><span _ngcontent-qaq-c134="" class="text-left">coronavirus</span><span _ngcontent-qaq-c134="" class="float-right">2020-03-04</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item active"><span _ngcontent-qaq-c134=""
+                                    class="text-left">coronavirus</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2020-03-04</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><!--bindings={
+}-->
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134="">
+                                <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
+}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
+                                <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">junk</span><span _ngcontent-qaq-c134="" class="float-right">2020-02-22</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">junk</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2020-02-22</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
+                                  tooltipclass="note-tooltip" container="body"
+                                  class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
+                                  ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
+                                  ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                <!--container-->
+                                <!--bindings={
   "ng-reflect-ng-if": "ship"
-}--><!--bindings={
+}-->
+                                <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">sinking ships</span><span _ngcontent-qaq-c134="" class="float-right">2020-02-18</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">sinking ships</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2020-02-18</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134="">
+                                <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
+}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
+                                <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">carvana</span><span _ngcontent-qaq-c134="" class="float-right">2020-02-05</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">carvana</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2020-02-05</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
+                                  tooltipclass="note-tooltip" container="body"
+                                  class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
+                                  ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
+                                  ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                <!--container-->
+                                <!--bindings={
   "ng-reflect-ng-if": "I like cars"
-}--><!--bindings={
+}-->
+                                <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">cars</span><span _ngcontent-qaq-c134="" class="float-right">2019-07-12</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">cars</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2019-07-12</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
+                                  tooltipclass="note-tooltip" container="body"
+                                  class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
+                                  ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
+                                  ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                <!--container-->
+                                <!--bindings={
   "ng-reflect-ng-if": "I do not like cats"
-}--><!--bindings={
+}-->
+                                <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">good cats</span><span _ngcontent-qaq-c134="" class="float-right">2019-02-01</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">good cats</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2019-02-01</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
+                                  tooltipclass="note-tooltip" container="body"
+                                  class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
+                                  ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
+                                  ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                <!--container-->
+                                <!--bindings={
   "ng-reflect-ng-if": "for case #5551212"
-}--><!--bindings={
+}-->
+                                <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">malpractice</span><span _ngcontent-qaq-c134="" class="float-right">2019-01-31</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">malpractice</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2019-01-31</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <div _ngcontent-qaq-c134="">
+                              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c134=""><!--bindings={
+}-->
+                              <div _ngcontent-qaq-c134="">
+                                <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
+}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
+                                <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134="" class="text-left">kittens</span><span _ngcontent-qaq-c134="" class="float-right">2019-01-21</span></a></div><!--bindings={
+}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
+                                    class="text-left">kittens</span><span _ngcontent-qaq-c134=""
+                                    class="float-right">2019-01-21</span></a></div>
+                              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
+}-->
+                            </div>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c134=""><!--container--><!--bindings={
+}-->
+                          </div>
+                          <div _ngcontent-qaq-c134="">
+                            <!--container-->
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
+}-->
+                          </div>
+                          <!--bindings={
   "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div></div></div><!--container--></app-queries></div><!--bindings={
+}-->
+                        </div>
+                      </div>
+                    </div>
+                    <!--container-->
+                  </app-queries>
+                </div>
+                <!--bindings={
   "ng-reflect-ng-template-outlet": "[object Object]"
-}--></div><!--bindings={
+}-->
+              </div>
+              <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><!--bindings={
+}-->
+              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><!--bindings={
+}-->
+              <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><!--bindings={
+}-->
+              <!--bindings={
   "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div></ngb-tabset></div><div _ngcontent-qaq-c133="" class="MiddleContainer"><div _ngcontent-qaq-c133="" class="Search"><app-search _ngcontent-qaq-c133="" _nghost-qaq-c127=""><br _ngcontent-qaq-c127=""><div _ngcontent-qaq-c127="" class="input-group"><input _ngcontent-qaq-c127="" type="search" placeholder="query" aria-label="query" aria-describedby="button-addon" class="form-control ng-untouched ng-pristine ng-valid" ng-reflect-model="coronavirus"><div _ngcontent-qaq-c127="" class="input-group-append searchButton"><button _ngcontent-qaq-c127="" type="button" id="button-addon" class="p-btn btn btn-outline-secondary">Search</button></div></div><br _ngcontent-qaq-c127=""></app-search></div><div _ngcontent-qaq-c133="" class="Map"><div _ngcontent-qaq-c133="" class="Map2 col-11 border border-primary"><app-map _ngcontent-qaq-c133="" _nghost-qaq-c137=""><div _ngcontent-qaq-c137="" class="bmapBox"><img _ngcontent-qaq-c137="" src="./GpAngular2search_files/2020-02-03_750x150.png" class="img"></div></app-map></div><div _ngcontent-qaq-c133="" class="ExtraButtons2"><app-extra-buttons _ngcontent-qaq-c133="" _nghost-qaq-c130=""><button _ngcontent-qaq-c130="" class="p-btn btn btn-sm">Import&nbsp;</button><button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Share&nbsp;</button><button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">Archive</button><!--bindings={
+}-->
+            </div>
+          </ngb-tabset>
+        </div>
+        <div _ngcontent-qaq-c133="" class="MiddleContainer">
+          <div _ngcontent-qaq-c133="" class="Search">
+            <app-search _ngcontent-qaq-c133="" _nghost-qaq-c127=""><br _ngcontent-qaq-c127="">
+              <div _ngcontent-qaq-c127="" class="input-group"><input _ngcontent-qaq-c127="" type="search"
+                  placeholder="query" aria-label="query" aria-describedby="button-addon"
+                  class="form-control ng-untouched ng-pristine ng-valid" ng-reflect-model="coronavirus">
+                <div _ngcontent-qaq-c127="" class="input-group-append searchButton"><button _ngcontent-qaq-c127=""
+                    type="button" id="button-addon" class="p-btn btn btn-outline-secondary">Search</button></div>
+              </div><br _ngcontent-qaq-c127="">
+            </app-search>
+          </div>
+          <div _ngcontent-qaq-c133="" class="Map">
+            <div _ngcontent-qaq-c133="" class="Map2 col-11 border border-primary">
+              <app-map _ngcontent-qaq-c133="" _nghost-qaq-c137="">
+                <div _ngcontent-qaq-c137="" class="bmapBox"><img _ngcontent-qaq-c137=""
+                    src="./GpAngular2search_files/2020-02-03_750x150.png" class="img"></div>
+              </app-map>
+            </div>
+            <div _ngcontent-qaq-c133="" class="ExtraButtons2">
+              <app-extra-buttons _ngcontent-qaq-c133="" _nghost-qaq-c130=""><button _ngcontent-qaq-c130=""
+                  class="p-btn btn btn-sm">Import&nbsp;</button><button _ngcontent-qaq-c130=""
+                  class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Share&nbsp;</button><button _ngcontent-qaq-c130=""
+                  class="p-btn btn-space btn btn-sm">Archive</button>
+                <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><!--bindings={
+}-->
+                <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Trash&nbsp;</button><!--container--><!--container--><!--container--></app-extra-buttons></div></div><div _ngcontent-qaq-c133="" class="Results"><app-results _ngcontent-qaq-c133="" _nghost-qaq-c128=""><!--container--><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col"><table _ngcontent-qaq-c128="" class="table table-hover"><thead _ngcontent-qaq-c128=""><tr _ngcontent-qaq-c128=""><th _ngcontent-qaq-c128="" class="flagged"> Flagged <span _ngcontent-qaq-c128="">▼</span><span _ngcontent-qaq-c128="" hidden="">▲</span></th><th _ngcontent-qaq-c128="" class="result active"> Results &nbsp;&nbsp;29<span _ngcontent-qaq-c128="">▼</span><span _ngcontent-qaq-c128="" hidden="">▲</span></th><th _ngcontent-qaq-c128="" class="viewed"> Viewed <span _ngcontent-qaq-c128="">▼</span><span _ngcontent-qaq-c128="" hidden="">▲</span></th><th _ngcontent-qaq-c128="" class="notes"> Notes <span _ngcontent-qaq-c128="">▼</span><span _ngcontent-qaq-c128="" hidden="">▲</span></th></tr></thead><tbody _ngcontent-qaq-c128=""><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}--><button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Trash&nbsp;</button>
+                <!--container-->
+                <!--container-->
+                <!--container-->
+              </app-extra-buttons>
+            </div>
+          </div>
+          <div _ngcontent-qaq-c133="" class="Results">
+            <app-results _ngcontent-qaq-c133="" _nghost-qaq-c128="">
+              <!--container-->
+              <div _ngcontent-qaq-c128="" class="row">
+                <div _ngcontent-qaq-c128="" class="col">
+                  <table _ngcontent-qaq-c128="" class="table table-hover">
+                    <thead _ngcontent-qaq-c128="">
+                      <tr _ngcontent-qaq-c128="">
+                        <th _ngcontent-qaq-c128="" class="flagged"> Flagged <span _ngcontent-qaq-c128="">▼</span><span
+                            _ngcontent-qaq-c128="" hidden="">▲</span></th>
+                        <th _ngcontent-qaq-c128="" class="result active"> Results &nbsp;&nbsp;29<span
+                            _ngcontent-qaq-c128="">▼</span><span _ngcontent-qaq-c128="" hidden="">▲</span></th>
+                        <th _ngcontent-qaq-c128="" class="viewed"> Viewed <span _ngcontent-qaq-c128="">▼</span><span
+                            _ngcontent-qaq-c128="" hidden="">▲</span></th>
+                        <th _ngcontent-qaq-c128="" class="notes"> Notes <span _ngcontent-qaq-c128="">▼</span><span
+                            _ngcontent-qaq-c128="" hidden="">▲</span></th>
+                      </tr>
+                    </thead>
+                    <tbody _ngcontent-qaq-c128="">
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 300;"><span _ngcontent-qaq-c128="">Coronavirus | Home | CDC</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.cdc.gov/coronavirus/index.html</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">CDC Coronavirus: Coronaviruses are common throughout the world. They can infect people and animals. Five different coronaviruses can infect people and&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right">2020-04-08</div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 300;"><span _ngcontent-qaq-c128="">Coronavirus | Home |
+                                      CDC</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.cdc.gov/coronavirus/index.html</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">CDC Coronavirus:
+                                    Coronaviruses are common throughout the world. They can infect people and animals.
+                                    Five different coronaviruses can infect people and&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right">2020-04-08</div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Disease 2019 (COVID-19) | CDC</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.cdc.gov/coronavirus/2019-ncov/index.html</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">CDC is responding to the novel coronavirus outbreak. ... Health Alert Network: Interim guidance on Coronavirus Disease 2019 (COVID-19) email iconSign up for the newsletter to receive weekly emails about the coronavirus disease 2019 (COVID-19) outbreak. </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Disease 2019
+                                      (COVID-19) | CDC</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.cdc.gov/coronavirus/2019-ncov/index.html</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">CDC is responding
+                                    to the novel coronavirus outbreak. ... Health Alert Network: Interim guidance on
+                                    Coronavirus Disease 2019 (COVID-19) email iconSign up for the newsletter to receive
+                                    weekly emails about the coronavirus disease 2019 (COVID-19) outbreak. </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus disease 2019 - World Health Organization</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.who.int/emergencies/diseases/novel-coronavirus-2019</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">Coronavirus disease (COVID-19) outbreak. On this website you can find information and guidance from WHO regarding the current outbreak of coronavirus&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus disease 2019 -
+                                      World Health Organization</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.who.int/emergencies/diseases/novel-coronavirus-2019</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">Coronavirus
+                                    disease (COVID-19) outbreak. On this website you can find information and guidance
+                                    from WHO regarding the current outbreak of coronavirus&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus - World Health Organization</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.who.int/health-topics/coronavirus</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">Several known coronaviruses are circulating in animals that have not yet infected humans. Common signs of infection include respiratory symptoms, fever, cough,&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus - World Health
+                                      Organization</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.who.int/health-topics/coronavirus</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">Several known
+                                    coronaviruses are circulating in animals that have not yet infected humans. Common
+                                    signs of infection include respiratory symptoms, fever, cough,&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Disease 2019 (COVID-19) - Texas DSHS</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://dshs.texas.gov/coronavirus/</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">A new coronavirus (2019-nCoV) was recently detected in Wuhan City, Hubei Province, China and is causing an outbreak of respiratory illness. The 2019-nCoV&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Disease 2019
+                                      (COVID-19) - Texas DSHS</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://dshs.texas.gov/coronavirus/</span></button></div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">A new coronavirus
+                                    (2019-nCoV) was recently detected in Wuhan City, Hubei Province, China and is
+                                    causing an outbreak of respiratory illness. The 2019-nCoV&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus cases top 94,000: Live updates on COVID-19 ...</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.livescience.com/coronavirus-updates.html</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">A newly identified coronavirus SARS-CoV-2 is spreading across the globe. Here's what you need to know about the virus and the disease it&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus cases top 94,000:
+                                      Live updates on COVID-19 ...</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.livescience.com/coronavirus-updates.html</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">A newly
+                                    identified coronavirus SARS-CoV-2 is spreading across the globe. Here's what you
+                                    need to know about the virus and the disease it&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Update (Live): 95,180 Cases and 3,254 Deaths ...</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.worldometers.info/coronavirus/</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, and death toll by country due to the COVID 19 coronavirus from&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Update (Live):
+                                      95,180 Cases and 3,254 Deaths ...</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.worldometers.info/coronavirus/</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">Live statistics
+                                    and coronavirus news tracking the number of confirmed cases, recovered patients, and
+                                    death toll by country due to the COVID 19 coronavirus from&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Q &amp; A on COVID-19 - ECDC - Europa EU</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.ecdc.europa.eu/en/novel-coronavirus-china/questions-answers</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">A wide range of animals is known to be the source of coronaviruses. For instance, the Middle East respiratory syndrome coronavirus (MERS-CoV)&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Q &amp; A on COVID-19 - ECDC
+                                      - Europa EU</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.ecdc.europa.eu/en/novel-coronavirus-china/questions-answers</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">A wide range of
+                                    animals is known to be the source of coronaviruses. For instance, the Middle East
+                                    respiratory syndrome coronavirus (MERS-CoV)&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Infections | Coronavirus | MedlinePlus</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://medlineplus.gov/coronavirusinfections.html</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">Coronaviruses are common viruses that most people get some time in their life and cause upper-respiratory illnesses. Learn more, including info on the 2019&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Infections |
+                                      Coronavirus | MedlinePlus</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://medlineplus.gov/coronavirusinfections.html</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">Coronaviruses are
+                                    common viruses that most people get some time in their life and cause
+                                    upper-respiratory illnesses. Learn more, including info on the 2019&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><tr _ngcontent-qaq-c128=""><td _ngcontent-qaq-c128="" colspan="4" class="result result-list"><div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item="" class="card ng-scope as-sortable-item"><div _ngcontent-qaq-c128="" class="row"><div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope"><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr _ngcontent-qaq-c128="">
+                        <td _ngcontent-qaq-c128="" colspan="4" class="result result-list">
+                          <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
+                            class="card ng-scope as-sortable-item">
+                            <div _ngcontent-qaq-c128="" class="row">
+                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
+                                  class="card-flag-icon ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope"><!--bindings={
+}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
+                                    class="icon-result-notflagged ng-scope">
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></a></div><div _ngcontent-qaq-c128="" class="col-8"><div _ngcontent-qaq-c128="" as-sortable-item-handle="" class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]" style="font-weight: 600;"><span _ngcontent-qaq-c128="">US coronavirus: California's first death was person who sailed ...</span></button><div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs"><span _ngcontent-qaq-c128="">https://www.cnn.com/2020/03/04/health/us-coronavirus-update-wednesday/index.html</span></button></div><div _ngcontent-qaq-c128="" class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid" style="overflow: hidden; overflow-wrap: break-word; resize: none;">As officials around the country urged local communities to think about ways to stop the novel coronavirus from spreading, California authorities&nbsp;... </div></div></div><div _ngcontent-qaq-c128="" class="col-2"><div _ngcontent-qaq-c128="" class="result-viewed text-right"></div></div><div _ngcontent-qaq-c128="" class="col-1"><div _ngcontent-qaq-c128="" class="result-notes text-center"><!--container--><!--bindings={
+}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-8">
+                                <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
+                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
+                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">US coronavirus: California's
+                                      first death was person who sailed ...</span></button>
+                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
+                                      class="result-url btn btn-link btn-xs"><span
+                                        _ngcontent-qaq-c128="">https://www.cnn.com/2020/03/04/health/us-coronavirus-update-wednesday/index.html</span></button>
+                                  </div>
+                                  <div _ngcontent-qaq-c128=""
+                                    class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
+                                    style="overflow: hidden; overflow-wrap: break-word; resize: none;">As officials
+                                    around the country urged local communities to think about ways to stop the novel
+                                    coronavirus from spreading, California authorities&nbsp;... </div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-2">
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                              </div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <div _ngcontent-qaq-c128="" class="result-notes text-center">
+                                  <!--container-->
+                                  <!--bindings={
   "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button><!--bindings={
+}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
+                                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></div></div></td></tr><!--bindings={
+}-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <!--bindings={
   "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></tbody></table><div _ngcontent-qaq-c128=""><ngb-pagination _ngcontent-qaq-c128="" role="navigation" class="d-flex justify-content-center" ng-reflect-collection-size="29" ng-reflect-page-size="10" ng-reflect-page="1"><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><ul class="pagination"><!--bindings={
+}-->
+                    </tbody>
+                  </table>
+                  <div _ngcontent-qaq-c128="">
+                    <ngb-pagination _ngcontent-qaq-c128="" role="navigation" class="d-flex justify-content-center"
+                      ng-reflect-collection-size="29" ng-reflect-page-size="10" ng-reflect-page="1">
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <ul class="pagination">
+                        <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><li class="page-item disabled"><a href="http://localhost:4200/" class="page-link" aria-label="Previous" tabindex="-1" aria-disabled="true">Prev<!--bindings={
+}-->
+                        <li class="page-item disabled"><a href="http://localhost:4200/" class="page-link"
+                            aria-label="Previous" tabindex="-1" aria-disabled="true">Prev
+                            <!--bindings={
   "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a></li><!--bindings={
+}--></a></li>
+                        <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><li class="page-item active" aria-current="page"><!--bindings={
+}-->
+                        <li class="page-item active" aria-current="page">
+                          <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><a href="http://localhost:4200/" class="page-link"> 1 <span class="sr-only">(current)</span><!--bindings={
+}--><a href="http://localhost:4200/" class="page-link"> 1 <span class="sr-only">(current)</span>
+                            <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><!--bindings={
+}-->
+                            <!--bindings={
   "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a><!--bindings={
+}--></a>
+                          <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></li><li class="page-item"><!--bindings={
+}-->
+                        </li>
+                        <li class="page-item">
+                          <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><a href="http://localhost:4200/" class="page-link"> 2 <!--bindings={
+}--><a href="http://localhost:4200/" class="page-link"> 2
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><!--bindings={
+}-->
+                            <!--bindings={
   "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a><!--bindings={
+}--></a>
+                          <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></li><li class="page-item"><!--bindings={
+}-->
+                        </li>
+                        <li class="page-item">
+                          <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><a href="http://localhost:4200/" class="page-link"> 3 <!--bindings={
+}--><a href="http://localhost:4200/" class="page-link"> 3
+                            <!--bindings={
   "ng-reflect-ng-if": "false"
-}--><!--bindings={
+}-->
+                            <!--bindings={
   "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a><!--bindings={
+}--></a>
+                          <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></li><!--bindings={
+}-->
+                        </li>
+                        <!--bindings={
   "ng-reflect-ng-for-of": "1,2,3"
-}--><li class="page-item"><a href="http://localhost:4200/" class="page-link" aria-label="Next">Next<!--bindings={
+}-->
+                        <li class="page-item"><a href="http://localhost:4200/" class="page-link" aria-label="Next">Next
+                            <!--bindings={
   "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a></li><!--bindings={
+}--></a></li>
+                        <!--bindings={
   "ng-reflect-ng-if": "true"
-}--><!--bindings={
+}-->
+                        <!--bindings={
   "ng-reflect-ng-if": "false"
-}--></ul></ngb-pagination></div><!--bindings={
+}-->
+                      </ul>
+                    </ngb-pagination>
+                  </div>
+                  <!--bindings={
   "ng-reflect-ng-if": "true"
-}--></div></div></app-results></div></div></section><div _ngcontent-qaq-c133="" class="Bottom"><app-messages _ngcontent-qaq-c133="" _nghost-qaq-c114=""><!--bindings={
+}-->
+                </div>
+              </div>
+            </app-results>
+          </div>
+        </div>
+      </section>
+      <div _ngcontent-qaq-c133="" class="Bottom">
+        <app-messages _ngcontent-qaq-c133="" _nghost-qaq-c114="">
+          <!--bindings={
   "ng-reflect-ng-if": "0"
-}--></app-messages><app-footer _ngcontent-qaq-c133="" _nghost-qaq-c136=""><footer _ngcontent-qaq-c136=""><p _ngcontent-qaq-c136=""><span _ngcontent-qaq-c136="" class="float-left">&nbsp;&nbsp;Version;&nbsp;0.9.8</span><span _ngcontent-qaq-c136="" class="text-xs-center">Copyright © 2020. <a _ngcontent-qaq-c136="" href="http://iterativesearch.com/" target="_blank">IterativeSearch</a> All rights reserved.</span></p></footer></app-footer></div></app-search-page><!--container--><ng-http-loader _ngcontent-qaq-c115="" spinner="sk-wave" _nghost-qaq-c49="" ng-reflect-spinner="sk-wave"><!--bindings={
+}-->
+        </app-messages>
+        <app-footer _ngcontent-qaq-c133="" _nghost-qaq-c136="">
+          <footer _ngcontent-qaq-c136="">
+            <p _ngcontent-qaq-c136=""><span _ngcontent-qaq-c136=""
+                class="float-left">&nbsp;&nbsp;Version;&nbsp;0.9.8</span><span _ngcontent-qaq-c136=""
+                class="text-xs-center">Copyright © 2020. <a _ngcontent-qaq-c136="" href="http://iterativesearch.com/"
+                  target="_blank">IterativeSearch</a> All rights reserved.</span></p>
+          </footer>
+        </app-footer>
+      </div>
+    </app-search-page>
+    <!--container-->
+    <ng-http-loader _ngcontent-qaq-c115="" spinner="sk-wave" _nghost-qaq-c49="" ng-reflect-spinner="sk-wave">
+      <!--bindings={
   "ng-reflect-ng-if": null
-}--></ng-http-loader></app-root>
+}-->
+    </ng-http-loader>
+  </app-root>
 
-</body></html>
+</body>
+
+</html>
