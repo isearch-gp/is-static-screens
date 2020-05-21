@@ -155,7 +155,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 .Search {
   height: 60px;
-  width: 98%;
+  /* width: 98%; */
+  width: auto;
   margin: 5px;
   flex: none;
 }
@@ -164,7 +165,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
   height: 155px;
   width: auto;
   margin: 5px;
-  /*flex: none;*/
+  /* flex: none; */
 }
 .Map2 {
   border: 3px blue;
@@ -223,19 +224,46 @@ WebKit inertia scrolling is being added here for any present/future devices that
   background: #7bac10;
 }
 /* global purple and green color buttons and text */
+/* import, share, archive, trash */
 .p-btn {
   display: inline-block;
+  text-align: center;
   vertical-align: top;
   text-transform: uppercase;
   color: #fff;
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  border-radius: 20px;
   font-weight: 500;
   font-size: 15px;
-  padding: 4px 19px;
+  width: 100px;
+  /* padding: 4px 19px; */
   letter-spacing: 1px;
   text-decoration: none;
   background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
 }
+
+/* search button - does not change on hover */
+#button-addon {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  width: 100px;
+  margin: 5px;
+  /* padding: 4px 19px; */
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
+}
+
+/* #button-addon:hover {
+  background-color: #cfd8dc;
+} */
+
 .p-btn[disabled] {
   opacity: 0.5;
 }
@@ -501,6 +529,7 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   width: 100%;
 }
 
+/* Which buttons are you??? */
 .ExtraButtons2[_ngcontent-qaq-c133] {
   width: 100px;
   margin: 5px;
@@ -508,7 +537,6 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
 }
 .Results[_ngcontent-qaq-c133] {
   flex: 1 1 auto;
-
   overflow: scroll;
   height: auto;
   padding: 0.5rem;
@@ -534,11 +562,11 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   margin-left: 7px;
 }
 
-/** </style><style> **/
-.searchButton[_ngcontent-qaq-c127] {
+/* Search Button..... */
+/* .searchButton[_ngcontent-qaq-c127] {
   width: 100px;
   margin: 5px;
-}
+} */
 
 /** </style><style> **/
 .mapBox[_ngcontent-qaq-c137] {
@@ -865,9 +893,13 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
 .table[_ngcontent-qaq-c128] td[_ngcontent-qaq-c128] {
   width: 100%;
   border: 1px solid #000;
-
   padding: 0px;
+  /* transform: scale(0.7); */
 }
+/* tr {
+  transform: scale(0.5)
+} */
+
 th.flagged[_ngcontent-qaq-c128],
 th.viewed[_ngcontent-qaq-c128],
 th.notes[_ngcontent-qaq-c128] {
@@ -1010,5 +1042,6 @@ footer[_ngcontent-qaq-c136] {
     .card-body[_ngcontent-qaq-c128]
     .result-snippet[_ngcontent-qaq-c128] {
     font-size: 16px;
+    /* font-size: 10px; */
   }
 }
