@@ -49,6 +49,22 @@
 
 /** styles.css - global styles **/
 /** ./client/styles/shared/github-icons.less **/
+
+/* Variables */
+:root {
+  --tool-tip-color: darkgreen;
+  --btn-color: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
+  --main-purple: #6542a4;
+}
+
+/* main-font */
+/* result-header-font-color */
+/* main-font-size */
+/* main-font-color */
+/* tool-tip-color ✅  */
+/* note-btn-color */
+/* btn-color ✅  */
+
 .icon-result-flagged {
   /**
     background:URL('assets/images/red-flagged-24.png') no-repeat 5% 5%;
@@ -66,21 +82,26 @@
   width: 30px;
   height: 30px;
 }
+
 /* note tooltips */
 .note-tooltip .tooltip-inner {
-  background-color: darkgreen;
+  background-color: var(--tool-tip-color);
+  /* background-color: darkgreen; */
   font-size: 125%;
 }
 .note-tooltip .arrow::before {
-  border-top-color: darkgreen;
+  border-top-color: var(--tool-tip-color);
+  /* border-top-color: darkgreen; */
 }
 /* result tooltips */
 .result-tooltip .tooltip-inner {
-  background-color: darkgreen;
+  background-color: var(--tool-tip-color);
   font-size: 125%;
+  /* background-color: darkgreen; */
 }
 .result-tooltip .arrow::before {
-  border-top-color: darkgreen;
+  border-top-color: var(--tool-tip-color);
+  /* border-top-color: darkgreen; */
 }
 /* Top and Bottom - same for all pages */
 /*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/
@@ -97,11 +118,11 @@
   z-index: 10;
   height: 90px;
 }
+
 .Bottom {
-  /*display: flex;
-    align-items: center;
-    justify-content: center;*/
-  /*background-color: lightGrey;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1rem;
   position: relative;
   z-index: 10;
@@ -153,13 +174,15 @@ WebKit inertia scrolling is being added here for any present/future devices that
     -ms-overflow-style: none;
     **/
 }
+
 .Search {
   height: 60px;
-  /* width: 98%; */
+  max-width: 88%;
   width: auto;
   margin: 5px;
   flex: none;
 }
+
 .Map {
   display: flex;
   height: 155px;
@@ -195,12 +218,14 @@ WebKit inertia scrolling is being added here for any present/future devices that
   transform: scale(1.35, 1.35);
 }
 .Query2 {
+  margin-top: 8px;
+  margin-left: 5px;
   flex: 1 1 auto;
   /*overflow: auto; will NOT show scroll if list is short */
   overflow: scroll;
   /*height: auto;*/
   height: 100%;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   /**
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
@@ -223,6 +248,35 @@ WebKit inertia scrolling is being added here for any present/future devices that
 ::-webkit-scrollbar-thumb:hover {
   background: #7bac10;
 }
+
+/* html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+} */
+
+.brand {
+  height: 70px;
+}
+
+.brand:hover {
+  border-bottom: 2px solid var(--main-purple);
+}
+
 /* global purple and green color buttons and text */
 /* import, share, archive, trash */
 .p-btn {
@@ -239,11 +293,35 @@ WebKit inertia scrolling is being added here for any present/future devices that
   /* padding: 4px 19px; */
   letter-spacing: 1px;
   text-decoration: none;
-  background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
+  background: var(--btn-color);
+}
+
+.search-input {
+  margin-left: 10px;
+  /* border-bottom: 2px solid #6542a4; */
+}
+
+input:focus {
+  /* border: 0;  */
+  outline: none !important;
+}
+
+.note-btn {
+  /* background-color: #ece7e6; */
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.note-btn:hover {
+  /* background-color: #7bac10; */
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* search button - does not change on hover */
-#button-addon {
+/* #button-addon {
   display: inline-block;
   text-align: center;
   vertical-align: top;
@@ -254,11 +332,10 @@ WebKit inertia scrolling is being added here for any present/future devices that
   font-size: 15px;
   width: 100px;
   margin: 5px;
-  /* padding: 4px 19px; */
   letter-spacing: 1px;
   text-decoration: none;
   background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
-}
+} */
 
 /* #button-addon:hover {
   background-color: #cfd8dc;
@@ -270,26 +347,30 @@ WebKit inertia scrolling is being added here for any present/future devices that
 .p-btn2 {
   color: #fff;
   text-decoration: none;
-  background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
+  background: var(--btn-color);
 }
 .p-btn2[disabled] {
   opacity: 0.5;
   color: #fff !important;
   /* white */
   text-decoration: none;
-  background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
+  background: var(--btn-color);
 }
+
+/* which text?? 👀  */
 .text-purple {
   color: #6542a4;
   /* purple */
   /* color: #876cb9; * light purple */
 }
+
+/* which buttons? 👀  */
 .g-btn {
   display: inline-block;
   vertical-align: top;
   /*text-transform: uppercase;*/
   /*color: #000; black */
-  color: #6542a4 !important;
+  color: var(--main-purple) !important;
   /* purple */
   border-radius: 4px;
   font-weight: 350;
@@ -301,6 +382,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
   background: #fff;
   /* white */
 }
+
+/* Which buttons? 👀  */
 .g-btn-active {
   display: inline-block;
   vertical-align: top;
@@ -317,7 +400,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
   /*background: -webkit-linear-gradient(top, #876cb9 0%, #6542a4 100%);*/
   background: yellowgreen;
 }
-/* note N buttons */
+
+/* note N buttons - Green/Grey buttons on the left*/
 .n-btn {
   display: inline-block;
   font-weight: 400;
@@ -338,6 +422,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+/* note N buttons - Green/Grey buttons on the left*/
 .n-btn-active {
   display: inline-block;
   text-align: center;
@@ -363,6 +449,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
   /*background: -webkit-linear-gradient(top, #876cb9 0%, #6542a4 100%);*/
   background: yellowgreen;
 }
+
 .isearch-bg {
   background: URL('assets/images/ApplicationHeader.jpg') no-repeat top center;
   /***
@@ -395,13 +482,27 @@ WebKit inertia scrolling is being added here for any present/future devices that
   /*color: #6542a4;*/
   font-weight: 300;
 }
-.nav-pills .nav-link {
-  color: #6542a4;
-  /* purple */
+
+/* .nav-link {
+  border-bottom: 3px solid black;
+} */
+
+.dropdown {
+  cursor: pointer;
 }
+
+.nav-pills .nav-link {
+  color: var(--main-purple);
+  margin-left: 8px;
+}
+
 .nav-pills .nav-link.active {
-  background-color: #6542a4;
-  /* purple */
+  color: var(--main-purple);
+  background-color: #fff;
+  border-bottom: 2px solid var(--main-purple);
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--main-purple);
 }
 
 h1[_ngcontent-qaq-c115] {
@@ -414,6 +515,7 @@ h2[_ngcontent-qaq-c115] {
   margin-top: 0;
   padding-top: 0;
 }
+
 nav[_ngcontent-qaq-c115] a[_ngcontent-qaq-c115] {
   padding: 5px 10px;
   text-decoration: none;
@@ -421,17 +523,6 @@ nav[_ngcontent-qaq-c115] a[_ngcontent-qaq-c115] {
   display: inline-block;
   background-color: #eee;
   border-radius: 4px;
-}
-nav[_ngcontent-qaq-c115] a[_ngcontent-qaq-c115]:visited,
-a[_ngcontent-qaq-c115]:link {
-  color: #607d8b;
-}
-nav[_ngcontent-qaq-c115] a[_ngcontent-qaq-c115]:hover {
-  color: #039be5;
-  background-color: #cfd8dc;
-}
-nav[_ngcontent-qaq-c115] a.active[_ngcontent-qaq-c115] {
-  color: #039be5;
 }
 
 [_ngcontent-qaq-c115]::-webkit-scrollbar {
@@ -506,9 +597,22 @@ nav[_ngcontent-qaq-c133] a[_ngcontent-qaq-c133] {
   background-color: #eee;
   border-radius: 4px;
 }
+
+nav[_ngcontent-qaq-c115] a[_ngcontent-qaq-c115]:visited,
+a[_ngcontent-qaq-c115]:link {
+  color: #607d8b;
+}
+nav[_ngcontent-qaq-c115] a[_ngcontent-qaq-c115]:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+nav[_ngcontent-qaq-c115] a.active[_ngcontent-qaq-c115] {
+  color: #039be5;
+}
+
 nav[_ngcontent-qaq-c133] a[_ngcontent-qaq-c133]:visited,
 a[_ngcontent-qaq-c133]:link {
-  color: #6542a4;
+  color: var(--main-purple);
 }
 nav[_ngcontent-qaq-c133] a[_ngcontent-qaq-c133]:hover {
   color: #039be5;
@@ -529,17 +633,20 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   width: 100%;
 }
 
-/* Which buttons are you??? */
+/* archive, trash, import, share buttons */
 .ExtraButtons2[_ngcontent-qaq-c133] {
   width: 100px;
   margin: 5px;
   flex: none;
 }
+
 .Results[_ngcontent-qaq-c133] {
   flex: 1 1 auto;
   overflow: scroll;
   height: auto;
-  padding: 0.5rem;
+  /* margin-top: 8px; */
+  margin: 8px;
+  /* padding: 0.5rem; */
 }
 
 [_nghost-qaq-c133] .tabset1 {
@@ -558,8 +665,14 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   font-weight: 300;
 }
 
-.nav-item[_ngcontent-qaq-c135] {
+/* .nav-item[_ngcontent-qaq-c135] {
   margin-left: 7px;
+} */
+
+.searchButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 
 /* Search Button..... */
@@ -568,7 +681,6 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   margin: 5px;
 } */
 
-/** </style><style> **/
 .mapBox[_ngcontent-qaq-c137] {
   border: solid;
   padding: 15px;
@@ -602,7 +714,7 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   left: 0.1em;
 }
 .results[_ngcontent-qaq-c128] a[_ngcontent-qaq-c128] {
-  color: #6542a4;
+  color: var(--main-purple);
 
   text-decoration: none;
   position: relative;
@@ -793,13 +905,18 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   padding-top: 2px;
   padding-left: 5px;
 }
+
+.result-url[_ngcontent-qaq-c128] {
+  display: none;
+}
+
 .card[_ngcontent-qaq-c128]
   .card-body[_ngcontent-qaq-c128]
   .result-title[_ngcontent-qaq-c128] {
   color: #6542a4;
 
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 18px;
+  /* font-weight: 600; */
 
   line-height: 22px;
   overflow: hidden;
@@ -879,9 +996,10 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
   box-sizing: border-box;
   color: #525252;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
-  margin: -5px 0 0 0;
+  margin-top: 3px;
+  /* margin: -5px 0 0 0; */
   min-height: 22px;
   overflow: hidden;
   padding: 0px 0 0 0px;
@@ -892,7 +1010,7 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
 
 .table[_ngcontent-qaq-c128] td[_ngcontent-qaq-c128] {
   width: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   padding: 0px;
   /* transform: scale(0.7); */
 }
@@ -938,13 +1056,14 @@ thead[_ngcontent-qaq-c128]
   color: #1272bb;
   visibility: visible;
 }
-.result-list[_ngcontent-qaq-c128] {
-}
+
+/* .result-list[_ngcontent-qaq-c128] {
+} */
 
 .pagination .page-item.active .page-link {
-  background-color: #6542a4;
+  background-color: var(--main-purple);
 
-  border-color: #6542a4;
+  border-color: var(--main-purple);
 }
 
 h2[_ngcontent-qaq-c114] {
@@ -970,6 +1089,17 @@ button.clear[_ngcontent-qaq-c114] {
   cursor: pointer;
   cursor: hand;
 }
+
+/* .note-pad:hover {
+  background-color: #7bac10;
+  cursor: pointer;
+} */
+
+/* .note-pad:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} */
+
 button[_ngcontent-qaq-c114]:hover {
   background-color: #cfd8dc;
 }
@@ -988,7 +1118,6 @@ footer[_ngcontent-qaq-c136] {
   right: 0;
   bottom: 0;
   left: 0;
-
   padding-top: 5px;
   text-align: center;
   border-width: 1px;
@@ -1012,12 +1141,12 @@ footer[_ngcontent-qaq-c136] {
 .list-group-item.active[_ngcontent-qaq-c134] {
   z-index: 2;
   color: #fff;
-  background-color: #6542a4;
+  background-color: var(--main-purple);
 
-  border-color: #6542a4;
+  border-color: var(--main-purple);
 }
-.query-list[_ngcontent-qaq-c134] {
-}
+/* .query-list[_ngcontent-qaq-c134] {
+} */
 
 /* Media Queries */
 
@@ -1041,7 +1170,24 @@ footer[_ngcontent-qaq-c136] {
   .card[_ngcontent-qaq-c128]
     .card-body[_ngcontent-qaq-c128]
     .result-snippet[_ngcontent-qaq-c128] {
-    font-size: 16px;
-    /* font-size: 10px; */
+    font-size: 10px;
+    font-size: 10px;
   }
 }
+
+/* 13 inch laptop */ 
+@media only screen and (max-width: 800px) and (max-height: 1280px) {
+
+}
+
+/* 15 inch laptop */
+@media only screen and (max-width: 1800px) and (max-height: 2880px) {
+}
+
+/* 27 inch external monitor */
+/* 1680 x 907 */
+@media only screen and (max-width: 2880px) and (max-height: 5120px) {
+}
+
+
+/* move import button */

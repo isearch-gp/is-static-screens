@@ -44,409 +44,310 @@
     <app-search-page _nghost-qaq-c133="">
       <div _ngcontent-qaq-c133="" class="Top">
         <app-header _ngcontent-qaq-c133="" _nghost-qaq-c135="">
-          <nav _ngcontent-qaq-c135="" ngbnavbar="" class="navbar navbar-expand-md isearch-bg"><a _ngcontent-qaq-c135=""
-              href="http://localhost:4200/#" class="navbar-brand"><img _ngcontent-qaq-c135=""
-                src="./GpAngular2search_files/IterativeSearch_LOGO_RGB.png" i="" height="70px"></a><button
-              _ngcontent-qaq-c135="" data-toggle="collapse" type="button" aria-controls="navbarContent"
-              aria-label="Toggle navigation" class="navbar-toggler ml-auto custom-toggler" aria-expanded="false"><span
-                _ngcontent-qaq-c135="" class="navbar-toggler-icon"></span></button>
+          <nav _ngcontent-qaq-c135="" ngbnavbar="" class="navbar navbar-expand-md isearch-bg">
+            <a _ngcontent-qaq-c135="" href="http://localhost:4200/#" class="navbar-brand">
+              <img class="brand" _ngcontent-qaq-c135="" src="./GpAngular2search_files/IterativeSearch_LOGO_RGB.png"
+                i="">
+            </a>
+            <button _ngcontent-qaq-c135="" data-toggle="collapse" type="button" aria-controls="navbarContent"
+              aria-label="Toggle navigation" class="navbar-toggler ml-auto custom-toggler" aria-expanded="false">
+              <span _ngcontent-qaq-c135="" class="navbar-toggler-icon">
+
+              </span>
+            </button>
             <div _ngcontent-qaq-c135="" id="navbarContent" class="navbar-collapse justify-content-end collapse">
               <div _ngcontent-qaq-c135="" class="navbar-nav">
                 <div _ngcontent-qaq-c135="" class="nav-item dropdown">
-                  <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135=""
-                      aria-haspopup="true" id="dropdownMenu1" ngbdropdowntoggle="" class="dropdown-toggle nav-link"
-                      aria-expanded="false">Settings</a>
+                  <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown">
+                    <a _ngcontent-qaq-c135="" aria-haspopup="true" id="dropdownMenu1" ngbdropdowntoggle=""
+                      class="dropdown-toggle nav-link" aria-expanded="false">
+                      <img src="./assets/images/outline_settings_black_36dp.png" alt="">
+                    </a>
                     <div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu1"
-                      class="dropdown-menu"><button _ngcontent-qaq-c135=""
-                        class="dropdown-item">Settings</button><button _ngcontent-qaq-c135=""
-                        class="dropdown-item disabled">Feedback</button><button _ngcontent-qaq-c135=""
-                        class="dropdown-item">About</button></div>
+                      class="dropdown-menu">
+                      <button _ngcontent-qaq-c135="" class="dropdown-item">Settings</button>
+                      <button _ngcontent-qaq-c135="" class="dropdown-item disabled">Feedback</button>
+                      <button _ngcontent-qaq-c135="" class="dropdown-item">About</button>
+                    </div>
                   </div>
                 </div>
               </div>
               <div _ngcontent-qaq-c135="" class="nav-item dropdown">
-                <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135=""
-                    aria-haspopup="true" id="dropdownMenu2" ngbdropdowntoggle="" class="dropdown-toggle nav-link"
-                    aria-expanded="false"> Profile</a>
+                <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown">
+                  <a _ngcontent-qaq-c135="" aria-haspopup="true" id="dropdownMenu2" ngbdropdowntoggle=""
+                    class="dropdown-toggle nav-link " aria-expanded="false"> <img
+                      src="./assets/images/outline_account_circle_black_36dp.png" alt="">
+                  </a>
                   <div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu2" class="dropdown-menu">
-                    <button _ngcontent-qaq-c135="" class="dropdown-item disabled">My Account</button><button
-                      _ngcontent-qaq-c135="" class="dropdown-item">Clear Data</button><button _ngcontent-qaq-c135=""
-                      class="dropdown-item disabled">Log Out</button></div>
+                    <button _ngcontent-qaq-c135="" class="dropdown-item disabled">My Account</button>
+                    <button _ngcontent-qaq-c135="" class="dropdown-item">Clear Data</button>
+                    <button _ngcontent-qaq-c135="" class="dropdown-item disabled">Log Out</button>
+                  </div>
                 </div>
               </div>
             </div>
           </nav>
         </app-header>
       </div>
+      <br>
       <section _ngcontent-qaq-c133="" id="container" class="Container">
-        <div _ngcontent-qaq-c133="" class="Query">
+        <div _ngcontent-qaq-c133="" class="Query query-nav">
           <ngb-tabset _ngcontent-qaq-c133="" type="pills" class="tabset1" ng-reflect-type="pills">
-            <ul role="tablist" class="justify-content-start nav nav-pills">
-              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link active" id="active"
+            <ul role="tablist" class="nav nav-pills">
+              <li class="nav-item">
+                <a href="http://localhost:4200/" role="tab" class="nav-link active" id="active"
                   aria-controls="active-panel" aria-selected="true" aria-disabled="false"> Active
-                  <!--bindings={
-  "ng-reflect-ng-template-outlet": null
-}--></a></li>
-              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="archive"
-                  aria-selected="false" aria-disabled="false"> Archive
-                  <!--bindings={
-  "ng-reflect-ng-template-outlet": null
-}--></a></li>
-              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="flagged"
-                  aria-selected="false" aria-disabled="false"> Flagged
-                  <!--bindings={
-  "ng-reflect-ng-template-outlet": null
-}--></a></li>
-              <!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}-->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://localhost:4200/" role="tab" class="nav-link" id="archive" aria-selected="false"
+                  aria-disabled="false"> Archive
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://localhost:4200/" role="tab" class="nav-link" id="flagged" aria-selected="false"
+                  aria-disabled="false"> Flagged
+                </a>
+              </li>
+
             </ul>
             <div class="tab-content">
               <div role="tabpanel" class="active tab-pane" id="active-panel" aria-labelledby="active">
                 <div _ngcontent-qaq-c133="" class="Query2">
                   <app-queries _ngcontent-qaq-c133="" _nghost-qaq-c134="" ng-reflect-tab-status="active">
-                    <h4 _ngcontent-qaq-c134="">Search Terms<span _ngcontent-qaq-c134=""
-                        class="float-right">Date&nbsp;&nbsp;&nbsp;Notes</span></h4>
+                    <!-- <h4 _ngcontent-qaq-c134="">Search Terms
+                      <span _ngcontent-qaq-c134=""
+                        class="float-right">Date&nbsp;&nbsp;&nbsp;Notes</span>
+                      </h4> -->
                     <div _ngcontent-qaq-c134="" class="queryBox">
                       <div _ngcontent-qaq-c134="" class="row">
                         <div _ngcontent-qaq-c134="" class="col">
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134="">
-                                <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
-                                <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">corona virus</span><span _ngcontent-qaq-c134=""
-                                    class="float-right">2020-03-04</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                <button _ngcontent-qaq-c134=""
+                                  class="float-right n-btn btn-outline-secondary">N</button>
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">corona mmmmmmvirus</span>
+                                    <span
+                                    _ngcontent-qaq-c134="" class="float-right">2020-03-04</span>
+                                  </a>
+                                </div>
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
                               <div _ngcontent-qaq-c134="">
-                                <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
-                                <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item active"><span _ngcontent-qaq-c134=""
+                                <button _ngcontent-qaq-c134=""
+                                  class="float-right n-btn btn-outline-secondary">N</button>
+                                <a _ngcontent-qaq-c134="" data-toggle="list"
+                                  class="query-list list-group-item active"><span _ngcontent-qaq-c134=""
                                     class="text-left">coronavirus</span><span _ngcontent-qaq-c134=""
                                     class="float-right">2020-03-04</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134="">
-                                <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
-                                <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">junk</span><span _ngcontent-qaq-c134=""
+                                <button _ngcontent-qaq-c134=""
+                                  class="float-right n-btn btn-outline-secondary">N</button>
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">junk</span><span _ngcontent-qaq-c134=""
                                     class="float-right">2020-02-22</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
                                   tooltipclass="note-tooltip" container="body"
                                   class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
                                   ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
                                   ng-reflect-ngb-tooltip="[object Object]">N</button>
                                 <!--container-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "ship"
-}-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">sinking ships</span><span _ngcontent-qaq-c134=""
-                                    class="float-right">2020-02-18</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">sinking ships</span><span
+                                    _ngcontent-qaq-c134="" class="float-right">2020-02-18</span></a></div>
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
-                            <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134="">
-                                <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
-                                <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">carvana</span><span _ngcontent-qaq-c134=""
+                                <button _ngcontent-qaq-c134=""
+                                  class="float-right n-btn btn-outline-secondary">N</button>
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">carvana</span><span _ngcontent-qaq-c134=""
                                     class="float-right">2020-02-05</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
                                   tooltipclass="note-tooltip" container="body"
                                   class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
                                   ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
                                   ng-reflect-ngb-tooltip="[object Object]">N</button>
                                 <!--container-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "I like cars"
-}-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">cars</span><span _ngcontent-qaq-c134=""
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">cars</span><span _ngcontent-qaq-c134=""
                                     class="float-right">2019-07-12</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
                                   tooltipclass="note-tooltip" container="body"
                                   class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
                                   ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
                                   ng-reflect-ngb-tooltip="[object Object]">N</button>
                                 <!--container-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "I do not like cats"
-}-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">good cats</span><span _ngcontent-qaq-c134=""
-                                    class="float-right">2019-02-01</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">good cats</span><span
+                                    _ngcontent-qaq-c134="" class="float-right">2019-02-01</span></a></div>
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134=""><button _ngcontent-qaq-c134="" placement="right"
                                   tooltipclass="note-tooltip" container="body"
                                   class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right"
                                   ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
                                   ng-reflect-ngb-tooltip="[object Object]">N</button>
                                 <!--container-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "for case #5551212"
-}-->
-                                <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">malpractice</span><span _ngcontent-qaq-c134=""
-                                    class="float-right">2019-01-31</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">malpractice</span><span
+                                    _ngcontent-qaq-c134="" class="float-right">2019-01-31</span></a></div>
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
                             <div _ngcontent-qaq-c134="">
-                              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                               <div _ngcontent-qaq-c134="">
-                                <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c134="" class="float-right n-btn btn-outline-secondary">N</button>
-                                <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span _ngcontent-qaq-c134=""
-                                    class="text-left">kittens</span><span _ngcontent-qaq-c134=""
+                                <button _ngcontent-qaq-c134=""
+                                  class="float-right n-btn btn-outline-secondary">N</button>
+                                <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item"><span
+                                    _ngcontent-qaq-c134="" class="text-left">kittens</span><span _ngcontent-qaq-c134=""
                                     class="float-right">2019-01-21</span></a></div>
-                              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                             </div>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                           </div>
                           <div _ngcontent-qaq-c134="">
                             <!--container-->
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                           </div>
-                          <!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}-->
+
                         </div>
                       </div>
                     </div>
                     <!--container-->
                   </app-queries>
                 </div>
-                <!--bindings={
-  "ng-reflect-ng-template-outlet": "[object Object]"
-}-->
+
               </div>
-              <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
-              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
-              <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
-              <!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}-->
+
             </div>
           </ngb-tabset>
         </div>
         <div _ngcontent-qaq-c133="" class="MiddleContainer">
+          <!-- Search Input -->
           <div _ngcontent-qaq-c133="" class="Search">
-            <app-search _ngcontent-qaq-c133="" _nghost-qaq-c127=""><br _ngcontent-qaq-c127="">
-              <div _ngcontent-qaq-c127="" class="input-group"><input _ngcontent-qaq-c127="" type="search"
-                  placeholder="query" aria-label="query" aria-describedby="button-addon"
-                  class="form-control ng-untouched ng-pristine ng-valid" ng-reflect-model="coronavirus">
-                <div _ngcontent-qaq-c127="" class="input-group-append searchButton"><button _ngcontent-qaq-c127=""
-                    type="button" id="button-addon" class="p-btn btn btn-outline-secondary">Search</button></div>
-              </div><br _ngcontent-qaq-c127="">
+            <app-search _ngcontent-qaq-c133="" _nghost-qaq-c127="">
+              <br _ngcontent-qaq-c127="">
+              <div _ngcontent-qaq-c127="" class="input-group">
+                <input _ngcontent-qaq-c127="" type="search" placeholder="Search..." aria-label="query"
+                  aria-describedby="button-addon" class="search-input form-control ng-untouched ng-pristine ng-valid"
+                  ng-reflect-model="coronavirus">
+                <div _ngcontent-qaq-c127="" class="input-group-append searchButton">
+                  <span class="input-group-text"><img src="./assets/images/search.png" alt=""></span>
+                  <!-- <button _ngcontent-qaq-c127="" type="button" id="button-addon"
+                    class="p-btn btn btn-outline-secondary search-btn">
+                    <img src="./assets/images/search.png" alt="">
+                  </button> -->
+                  <!-- <div class="input-group-append">
+                    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                        aria-hidden="true"></i></span>
+                  </div> -->
+                </div>
+              </div>
+              <br _ngcontent-qaq-c127="">
             </app-search>
           </div>
           <div _ngcontent-qaq-c133="" class="Map">
             <div _ngcontent-qaq-c133="" class="Map2 col-11 border border-primary">
               <app-map _ngcontent-qaq-c133="" _nghost-qaq-c137="">
-                <div _ngcontent-qaq-c137="" class="bmapBox"><img _ngcontent-qaq-c137=""
-                    src="./GpAngular2search_files/2020-02-03_750x150.png" class="img"></div>
+                <div _ngcontent-qaq-c137="" class="bmapBox">
+                  <img _ngcontent-qaq-c137="" src="./GpAngular2search_files/2020-02-03_750x150.png" class="img">
+                </div>
               </app-map>
             </div>
             <div _ngcontent-qaq-c133="" class="ExtraButtons2">
@@ -454,15 +355,7 @@
                   class="p-btn btn btn-sm">Import&nbsp;</button><button _ngcontent-qaq-c130=""
                   class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Share&nbsp;</button><button _ngcontent-qaq-c130=""
                   class="p-btn btn-space btn btn-sm">Archive</button>
-                <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
-                <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Trash&nbsp;</button>
-                <!--container-->
-                <!--container-->
-                <!--container-->
+                <button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Trash&nbsp;</button>
               </app-extra-buttons>
             </div>
           </div>
@@ -492,22 +385,20 @@
                             <div _ngcontent-qaq-c128="" class="row">
                               <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
                                   class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a></div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
                                   class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 300;"><span _ngcontent-qaq-c128="">Coronavirus | Home |
-                                      CDC</span></button>
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"><span
+                                      _ngcontent-qaq-c128="">Coronavirus | Home |
+                                      CDC</span>
+                                    </button>
                                   <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
                                       class="result-url btn btn-link btn-xs"><span
-                                        _ngcontent-qaq-c128="">https://www.cdc.gov/coronavirus/index.html</span></button>
+                                        _ngcontent-qaq-c128="">https://www.cdc.gov/coronavirus/index.html</span>
+                                      </button>
                                   </div>
                                   <div _ngcontent-qaq-c128=""
                                     class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
@@ -517,17 +408,17 @@
                                 </div>
                               </div>
                               <div _ngcontent-qaq-c128="" class="col-2">
-                                <div _ngcontent-qaq-c128="" class="result-viewed text-right">2020-04-08</div>
+                                <!-- <div _ngcontent-qaq-c128="" class="result-viewed text-right">2020-04-08</div> -->
                               </div>
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-sm">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button> -->
+                                  <button class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="">
+                                  </button>
                                 </div>
                               </div>
                             </div>
@@ -539,20 +430,17 @@
                           <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
                             class="card ng-scope as-sortable-item">
                             <div _ngcontent-qaq-c128="" class="row">
-                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
-                                  class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope">
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a>
+                              </div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
                                   class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Disease 2019
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"><span
+                                      _ngcontent-qaq-c128="">Coronavirus Disease 2019
                                       (COVID-19) | CDC</span></button>
                                   <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
                                       class="result-url btn btn-link btn-xs"><span
@@ -572,12 +460,9 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn"><img
+                                      src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
                                 </div>
                               </div>
                             </div>
@@ -589,24 +474,25 @@
                           <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
                             class="card ng-scope as-sortable-item">
                             <div _ngcontent-qaq-c128="" class="row">
-                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
-                                  class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope">
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a>
+                              </div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
-                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus disease 2019 -
-                                      World Health Organization</span></button>
-                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
-                                      class="result-url btn btn-link btn-xs"><span
-                                        _ngcontent-qaq-c128="">https://www.who.int/emergencies/diseases/novel-coronavirus-2019</span></button>
+                                  class="card-body ng-scope as-sortable-item-handle">
+                                  <button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs"
+                                    ng-reflect-ng-style="[object Object]"><span _ngcontent-qaq-c128="">Coronavirus
+                                      disease 2019 -
+                                      World Health Organization</span>
+                                  </button>
+                                  <div _ngcontent-qaq-c128="">
+                                    <button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs">
+                                      <span
+                                        _ngcontent-qaq-c128="">https://www.who.int/emergencies/diseases/novel-coronavirus-2019</span>
+                                    </button>
                                   </div>
                                   <div _ngcontent-qaq-c128=""
                                     class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
@@ -621,12 +507,11 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
@@ -640,22 +525,21 @@
                             <div _ngcontent-qaq-c128="" class="row">
                               <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
                                   class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a></div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
-                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus - World Health
-                                      Organization</span></button>
-                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
-                                      class="result-url btn btn-link btn-xs"><span
-                                        _ngcontent-qaq-c128="">https://www.who.int/health-topics/coronavirus</span></button>
+                                  class="card-body ng-scope as-sortable-item-handle">
+                                  <button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs"
+                                    ng-reflect-ng-style="[object Object]">
+                                    <span _ngcontent-qaq-c128="">Coronavirus - World Health
+                                      Organization</span>
+                                  </button>
+                                  <div _ngcontent-qaq-c128="">
+                                    <button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs">
+                                      <span _ngcontent-qaq-c128="">https://www.who.int/health-topics/coronavirus</span>
+                                    </button>
                                   </div>
                                   <div _ngcontent-qaq-c128=""
                                     class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
@@ -670,12 +554,11 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
@@ -687,24 +570,25 @@
                           <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
                             class="card ng-scope as-sortable-item">
                             <div _ngcontent-qaq-c128="" class="row">
-                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
-                                  class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope">
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a>
+                              </div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
-                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Disease 2019
-                                      (COVID-19) - Texas DSHS</span></button>
-                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
-                                      class="result-url btn btn-link btn-xs"><span
-                                        _ngcontent-qaq-c128="">https://dshs.texas.gov/coronavirus/</span></button></div>
+                                  class="card-body ng-scope as-sortable-item-handle">
+                                  <button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs"
+                                    ng-reflect-ng-style="[object Object]">
+                                    <span _ngcontent-qaq-c128="">Coronavirus Disease 2019
+                                      (COVID-19) - Texas DSHS</span>
+                                  </button>
+                                  <div _ngcontent-qaq-c128="">
+                                    <button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs">
+                                      <span _ngcontent-qaq-c128="">https://dshs.texas.gov/coronavirus/</span>
+                                    </button>
+                                  </div>
                                   <div _ngcontent-qaq-c128=""
                                     class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
                                     style="overflow: hidden; overflow-wrap: break-word; resize: none;">A new coronavirus
@@ -713,17 +597,18 @@
                                 </div>
                               </div>
                               <div _ngcontent-qaq-c128="" class="col-2">
-                                <div _ngcontent-qaq-c128="" class="result-viewed text-right"></div>
+                                <div _ngcontent-qaq-c128="" class="result-viewed text-right">
+
+                                </div>
                               </div>
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
@@ -737,22 +622,22 @@
                             <div _ngcontent-qaq-c128="" class="row">
                               <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
                                   class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a></div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
-                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus cases top 94,000:
-                                      Live updates on COVID-19 ...</span></button>
+                                  class="card-body ng-scope as-sortable-item-handle">
+                                  <button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs"
+                                    ng-reflect-ng-style="[object Object]">
+                                    <span _ngcontent-qaq-c128="">Coronavirus cases top 94,000:
+                                      Live updates on COVID-19 ...</span>
+                                  </button>
                                   <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
-                                      class="result-url btn btn-link btn-xs"><span
-                                        _ngcontent-qaq-c128="">https://www.livescience.com/coronavirus-updates.html</span></button>
+                                      class="result-url btn btn-link btn-xs">
+                                      <span
+                                        _ngcontent-qaq-c128="">https://www.livescience.com/coronavirus-updates.html</span>
+                                    </button>
                                   </div>
                                   <div _ngcontent-qaq-c128=""
                                     class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
@@ -767,12 +652,11 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
@@ -786,18 +670,14 @@
                             <div _ngcontent-qaq-c128="" class="row">
                               <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
                                   class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a></div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
                                   class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Update (Live):
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"><span
+                                      _ngcontent-qaq-c128="">Coronavirus Update (Live):
                                       95,180 Cases and 3,254 Deaths ...</span></button>
                                   <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
                                       class="result-url btn btn-link btn-xs"><span
@@ -816,12 +696,11 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
@@ -835,18 +714,14 @@
                             <div _ngcontent-qaq-c128="" class="row">
                               <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
                                   class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a></div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
                                   class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Q &amp; A on COVID-19 - ECDC
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"><span
+                                      _ngcontent-qaq-c128="">Q &amp; A on COVID-19 - ECDC
                                       - Europa EU</span></button>
                                   <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
                                       class="result-url btn btn-link btn-xs"><span
@@ -865,12 +740,11 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
@@ -884,22 +758,22 @@
                             <div _ngcontent-qaq-c128="" class="row">
                               <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
                                   class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                                  <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                    src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a></div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
-                                  class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">Coronavirus Infections |
-                                      Coronavirus | MedlinePlus</span></button>
-                                  <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
-                                      class="result-url btn btn-link btn-xs"><span
-                                        _ngcontent-qaq-c128="">https://medlineplus.gov/coronavirusinfections.html</span></button>
+                                  class="card-body ng-scope as-sortable-item-handle">
+                                  <button _ngcontent-qaq-c128="" class="result-title btn btn-link btn-xs"
+                                    ng-reflect-ng-style="[object Object]">
+                                    <span _ngcontent-qaq-c128="">Coronavirus Infections |
+                                      Coronavirus | MedlinePlus</span>
+                                  </button>
+                                  <div _ngcontent-qaq-c128="">
+                                    <button _ngcontent-qaq-c128="" class="result-url btn btn-link btn-xs">
+                                      <span
+                                        _ngcontent-qaq-c128="">https://medlineplus.gov/coronavirusinfections.html</span>
+                                    </button>
                                   </div>
                                   <div _ngcontent-qaq-c128=""
                                     class="result-snippet ng-scope ng-isolate-scope ng-pristine ng-valid"
@@ -914,12 +788,11 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
@@ -931,20 +804,19 @@
                           <div _ngcontent-qaq-c128="" card="card" column="column" as-sortable-item=""
                             class="card ng-scope as-sortable-item">
                             <div _ngcontent-qaq-c128="" class="row">
-                              <div _ngcontent-qaq-c128="" class="col-1"><a _ngcontent-qaq-c128=""
-                                  class="card-flag-icon ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><img _ngcontent-qaq-c128="" aria-hidden="true" i="" src="./GpAngular2search_files/blank.gif"
-                                    class="icon-result-notflagged ng-scope">
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></a></div>
+                              <div _ngcontent-qaq-c128="" class="col-1">
+                                <a _ngcontent-qaq-c128="" class="card-flag-icon ng-scope">
+
+                                </a>
+                                <img _ngcontent-qaq-c128="" aria-hidden="true" i=""
+                                  src="./GpAngular2search_files/blank.gif" class="icon-result-notflagged ng-scope">
+                                </a>
+                              </div>
                               <div _ngcontent-qaq-c128="" class="col-8">
                                 <div _ngcontent-qaq-c128="" as-sortable-item-handle=""
                                   class="card-body ng-scope as-sortable-item-handle"><button _ngcontent-qaq-c128=""
-                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"
-                                    style="font-weight: 600;"><span _ngcontent-qaq-c128="">US coronavirus: California's
+                                    class="result-title btn btn-link btn-xs" ng-reflect-ng-style="[object Object]"><span
+                                      _ngcontent-qaq-c128="">US coronavirus: California's
                                       first death was person who sailed ...</span></button>
                                   <div _ngcontent-qaq-c128=""><button _ngcontent-qaq-c128=""
                                       class="result-url btn btn-link btn-xs"><span
@@ -963,105 +835,56 @@
                               <div _ngcontent-qaq-c128="" class="col-1">
                                 <div _ngcontent-qaq-c128="" class="result-notes text-center">
                                   <!--container-->
-                                  <!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button>
-                                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                                  <button _ngcontent-qaq-c128="" class="btn btn-sm note-btn">
+                                    <img src="./assets/images/outline_text_snippet_black_36dp.png" alt="note pad">
+                                  </button>
+                                  <!-- <button _ngcontent-qaq-c128="" class="btn btn-outline-secondary">Notes</button> -->
+
                                 </div>
                               </div>
                             </div>
                           </div>
                         </td>
                       </tr>
-                      <!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}-->
+
                     </tbody>
                   </table>
                   <div _ngcontent-qaq-c128="">
                     <ngb-pagination _ngcontent-qaq-c128="" role="navigation" class="d-flex justify-content-center"
                       ng-reflect-collection-size="29" ng-reflect-page-size="10" ng-reflect-page="1">
-                      <!--container-->
-                      <!--container-->
-                      <!--container-->
-                      <!--container-->
-                      <!--container-->
-                      <!--container-->
+
                       <ul class="pagination">
-                        <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
                         <li class="page-item disabled"><a href="http://localhost:4200/" class="page-link"
                             aria-label="Previous" tabindex="-1" aria-disabled="true">Prev
-                            <!--bindings={
-  "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a></li>
-                        <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                          </a></li>
+
                         <li class="page-item active" aria-current="page">
-                          <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a href="http://localhost:4200/" class="page-link"> 1 <span class="sr-only">(current)</span>
-                            <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
-                            <!--bindings={
-  "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a>
-                          <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                          <a href="http://localhost:4200/" class="page-link"> 1 <span class="sr-only">(current)</span>
+
+                          </a>
+
                         </li>
                         <li class="page-item">
-                          <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a href="http://localhost:4200/" class="page-link"> 2
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
-                            <!--bindings={
-  "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a>
-                          <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                          <a href="http://localhost:4200/" class="page-link"> 2
+                          </a>
+
                         </li>
                         <li class="page-item">
-                          <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a href="http://localhost:4200/" class="page-link"> 3
-                            <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
-                            <!--bindings={
-  "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a>
-                          <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+                          <a href="http://localhost:4200/" class="page-link"> 3
+                          </a>
+
                         </li>
-                        <!--bindings={
-  "ng-reflect-ng-for-of": "1,2,3"
-}-->
-                        <li class="page-item"><a href="http://localhost:4200/" class="page-link" aria-label="Next">Next
-                            <!--bindings={
-  "ng-reflect-ng-template-outlet-context": "[object Object]"
-}--></a></li>
-                        <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
-                        <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
+
+                        <li class="page-item">
+                          <a href="http://localhost:4200/" class="page-link" aria-label="Next">Next
+                          </a>
+                        </li>
+
                       </ul>
                     </ngb-pagination>
                   </div>
-                  <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
+
                 </div>
               </div>
             </app-results>
@@ -1070,25 +893,21 @@
       </section>
       <div _ngcontent-qaq-c133="" class="Bottom">
         <app-messages _ngcontent-qaq-c133="" _nghost-qaq-c114="">
-          <!--bindings={
-  "ng-reflect-ng-if": "0"
-}-->
+
         </app-messages>
         <app-footer _ngcontent-qaq-c133="" _nghost-qaq-c136="">
-          <footer _ngcontent-qaq-c136="">
+          <!-- <footer _ngcontent-qaq-c136="">
             <p _ngcontent-qaq-c136=""><span _ngcontent-qaq-c136=""
                 class="float-left">&nbsp;&nbsp;Version;&nbsp;0.9.8</span><span _ngcontent-qaq-c136=""
                 class="text-xs-center">Copyright © 2020. <a _ngcontent-qaq-c136="" href="http://iterativesearch.com/"
                   target="_blank">IterativeSearch</a> All rights reserved.</span></p>
-          </footer>
+          </footer> -->
         </app-footer>
       </div>
     </app-search-page>
     <!--container-->
     <ng-http-loader _ngcontent-qaq-c115="" spinner="sk-wave" _nghost-qaq-c49="" ng-reflect-spinner="sk-wave">
-      <!--bindings={
-  "ng-reflect-ng-if": null
-}-->
+
     </ng-http-loader>
   </app-root>
 
