@@ -1142,11 +1142,12 @@ footer[_ngcontent-qaq-c136] {
 }
 
 .search-action-container {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .search-action-btn {
-  margin-top: 5px;
+  margin: 6px 6px;
+  /* padding: 5px 5px; */
   color: var(--main-purple);
 }
 
