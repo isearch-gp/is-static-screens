@@ -64,6 +64,7 @@
 /* tool-tip-color ✅  */
 /* note-btn-color */
 /* btn-color ✅  */
+/* main-green */
 
 .icon-result-flagged {
   /**
@@ -219,7 +220,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 .Query2 {
   margin-top: 8px;
-  margin-left: 5px;
+  margin-left: 8px;
   flex: 1 1 auto;
   /*overflow: auto; will NOT show scroll if list is short */
   overflow: scroll;
@@ -1126,6 +1127,43 @@ footer[_ngcontent-qaq-c136] {
   line-height: 10px;
 }
 
+.search-note-btn {
+  color: var(--main-purple);
+  padding: 0px 8px;
+  /* margin-bottom: 3px; */
+}
+
+.search-note-btn-active {
+  color: #fff;
+}
+
+.search-title {
+  justify-content: space-between;
+}
+
+.search-action-container {
+  justify-content: flex-end;
+}
+
+.search-action-btn {
+  margin-top: 5px;
+  color: var(--main-purple);
+}
+
+.search-action-btn:hover {
+  /* color: var(--main-purple); */
+  text-decoration: underline;
+}
+
+.search-action-btn-active {
+  margin-top: 5px;
+  color: #fff;
+}
+
+.search-action-btn-active:hover {
+  text-decoration: underline;
+}
+
 .queryBox[_ngcontent-qaq-c134] {
   flex: none;
   border: none;
@@ -1135,14 +1173,13 @@ footer[_ngcontent-qaq-c136] {
   padding-right: 5px;
 }
 .list-group-item[_ngcontent-qaq-c134] {
-  width: 357px;
+  width: 400px;
   margin-right: -1px;
 }
 .list-group-item.active[_ngcontent-qaq-c134] {
   z-index: 2;
   color: #fff;
   background-color: var(--main-purple);
-
   border-color: var(--main-purple);
 }
 /* .query-list[_ngcontent-qaq-c134] {
@@ -1175,9 +1212,8 @@ footer[_ngcontent-qaq-c136] {
   }
 }
 
-/* 13 inch laptop */ 
+/* 13 inch laptop */
 @media only screen and (max-width: 800px) and (max-height: 1280px) {
-
 }
 
 /* 15 inch laptop */
@@ -1188,6 +1224,5 @@ footer[_ngcontent-qaq-c136] {
 /* 1680 x 907 */
 @media only screen and (max-width: 2880px) and (max-height: 5120px) {
 }
-
 
 /* move import button */
