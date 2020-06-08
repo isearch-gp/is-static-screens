@@ -40,7 +40,9 @@
 
 <body>
   <app-root _nghost-qaq-c115="" ng-version="9.1.2">
-    <router-outlet _ngcontent-qaq-c115=""></router-outlet>
+    <router-outlet _ngcontent-qaq-c115="">
+
+    </router-outlet>
     <app-search-page _nghost-qaq-c133="">
       <div _ngcontent-qaq-c133="" class="Top">
         <app-header _ngcontent-qaq-c133="" _nghost-qaq-c135="">
@@ -157,7 +159,7 @@
                                     </div>
                                   </div>
 
-                                  <!-- <div class="row search-action-container">
+                                  <div class="row search-action-container">
                                     <div>
                                       <button class="btn btn-sm search-action-btn">share
                                         <svg aria-hidden="true" width="20" height="16" focusable="false"
@@ -187,7 +189,7 @@
                                           d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
                                         </path>
                                       </svg></button>
-                                  </div> -->
+                                  </div>
 
                                 </a>
 
@@ -198,12 +200,12 @@
                           <div _ngcontent-qaq-c134="">
 
                             <div _ngcontent-qaq-c134="">
-                              <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item active">
+                              <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item">
                                 <div class="row search-title">
                                   <div _ngcontent-qaq-c134="">cats</div>
                                   <div _ngcontent-qaq-c134="">2020-03-04</div>
                                   <div>
-                                    <button class="btn btn-sm search-note-btn-active">
+                                    <button class="btn btn-sm search-note-btn">
                                       <svg aria-hidden="true" width="20" height="20" focusable="false" data-prefix="far"
                                         data-icon="sticky-note" class="svg-inline--fa fa-sticky-note fa-w-14" role="img"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -217,7 +219,7 @@
 
                                 <div class="row search-action-container">
                                   <div>
-                                    <button class="btn btn-sm search-action-btn-active">share
+                                    <button class="btn btn-sm search-action-btn">share
                                       <svg aria-hidden="true" width="20" height="16" focusable="false" data-prefix="fas"
                                         data-icon="share" class="svg-inline--fa fa-share fa-w-16" role="img"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -228,7 +230,7 @@
                                     </button>
                                   </div>
 
-                                  <button class="btn btn-sm search-action-btn-active">archive
+                                  <button class="btn btn-sm search-action-btn">archive
                                     <svg aria-hidden="true" width="20" height="16" focusable="false" data-prefix="fas"
                                       data-icon="archive" class="svg-inline--fa fa-archive fa-w-16" role="img"
                                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -238,7 +240,7 @@
                                     </svg>
                                   </button>
 
-                                  <button class="btn btn-sm search-action-btn-active">trash
+                                  <button class="btn btn-sm search-action-btn">trash
                                     <svg aria-hidden="true" width="20" height="16" focusable="false" data-prefix="fas"
                                       data-icon="trash-alt" class="svg-inline--fa fa-trash-alt fa-w-14" role="img"
                                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -441,7 +443,15 @@
                   aria-describedby="button-addon" class="search-input form-control ng-untouched ng-pristine ng-valid"
                   ng-reflect-model="coronavirus">
                 <div _ngcontent-qaq-c127="" class="input-group-append searchButton">
-                  <span class="input-group-text"><img src="./assets/images/search.png" alt=""></span>
+                  <span class="input-group-text"><svg aria-hidden="true" width="16" height="16" focusable="false"
+                      data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                      </path>
+                    </svg>
+                  </span>
+
                   <!-- <button _ngcontent-qaq-c127="" type="button" id="button-addon"
                     class="p-btn btn btn-outline-secondary search-btn">
                     <img src="./assets/images/search.png" alt="">
@@ -451,26 +461,27 @@
                         aria-hidden="true"></i></span>
                   </div> -->
                 </div>
+                <button class="btn btn-sm p-btn import-btn">Import</button>
               </div>
               <br _ngcontent-qaq-c127="">
             </app-search>
           </div>
           <div _ngcontent-qaq-c133="" class="Map">
-            <div _ngcontent-qaq-c133="" class="Map2 col-11 border border-primary">
+            <div _ngcontent-qaq-c133="" class="Map2">
               <app-map _ngcontent-qaq-c133="" _nghost-qaq-c137="">
                 <div _ngcontent-qaq-c137="" class="bmapBox">
                   <img _ngcontent-qaq-c137="" src="./GpAngular2search_files/2020-02-03_750x150.png" class="img">
                 </div>
               </app-map>
             </div>
-            <div _ngcontent-qaq-c133="" class="ExtraButtons2">
+            <!-- <div _ngcontent-qaq-c133="" class="ExtraButtons2">
               <app-extra-buttons _ngcontent-qaq-c133="" _nghost-qaq-c130="">
                 <button _ngcontent-qaq-c130="" class="p-btn btn btn-sm">Import&nbsp;</button>
-                <!-- <button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Share&nbsp;</button> -->
-                <!-- <button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">Archive</button> -->
-                <!-- <button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Trash&nbsp;</button> -->
+                <button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Share&nbsp;</button>
+                <button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">Archive</button>
+                <button _ngcontent-qaq-c130="" class="p-btn btn-space btn btn-sm">&nbsp;&nbsp;Trash&nbsp;</button>
               </app-extra-buttons>
-            </div>
+            </div> -->
           </div>
           <div _ngcontent-qaq-c133="" class="Results">
             <app-results _ngcontent-qaq-c133="" _nghost-qaq-c128="">
