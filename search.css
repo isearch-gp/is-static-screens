@@ -180,21 +180,25 @@ WebKit inertia scrolling is being added here for any present/future devices that
   height: 60px;
   max-width: 88%;
   width: auto;
-  margin: 5px;
-  flex: none;
+  margin-bottom: 5px;
+  /* margin: 5px; */
+  /* flex: none; */
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .Map {
   display: flex;
   height: 155px;
+  max-width: 100%;
   width: auto;
   margin: 5px;
-  /* flex: none; */
+  border: 1px solid #d3d3d3;
 }
+
 .Map2 {
-  border: 3px blue;
   width: auto;
-  max-width: 90%;
+  max-width: 100%;
   /*position: relative;*/
   /*z-index forces to the front*/
   z-index: 999;
@@ -202,7 +206,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
     padding: 4px;*/
   min-width: 160px;
   /**background: #fcfaf0;**/
-  background: white;
+  background: #ffffff;
   /* flex: none;*/
   /*overflow: scroll;*/
   overflow: hidden;
@@ -281,6 +285,7 @@ body::-webkit-scrollbar-thumb {
 /* global purple and green color buttons and text */
 /* import, share, archive, trash */
 .p-btn {
+  margin-left: 6px;
   display: inline-block;
   text-align: center;
   vertical-align: top;
@@ -289,7 +294,7 @@ body::-webkit-scrollbar-thumb {
   /* border-radius: 4px; */
   border-radius: 20px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   width: 100px;
   /* padding: 4px 19px; */
   letter-spacing: 1px;
@@ -302,11 +307,7 @@ body::-webkit-scrollbar-thumb {
   /* border-bottom: 2px solid #6542a4; */
 }
 
-input:focus {
-  /* border: 0;  */
-  outline: none !important;
-}
-
+/* note buttons in search results table */
 .note-btn {
   /* background-color: #ece7e6; */
   padding: 0px;
@@ -321,35 +322,18 @@ input:focus {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* search button - does not change on hover */
-/* #button-addon {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: 15px;
-  width: 100px;
-  margin: 5px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
-} */
-
-/* #button-addon:hover {
-  background-color: #cfd8dc;
-} */
-
 .p-btn[disabled] {
   opacity: 0.5;
 }
+
+/* Where are you?? 👀  */
 .p-btn2 {
   color: #fff;
   text-decoration: none;
   background: var(--btn-color);
 }
+
+/* 👀 👀 👀  */
 .p-btn2[disabled] {
   opacity: 0.5;
   color: #fff !important;
@@ -403,6 +387,7 @@ input:focus {
 }
 
 /* note N buttons - Green/Grey buttons on the left*/
+/* not being used right now */
 .n-btn {
   display: inline-block;
   font-weight: 400;
@@ -425,6 +410,7 @@ input:focus {
 }
 
 /* note N buttons - Green/Grey buttons on the left*/
+/* not being used right now */
 .n-btn-active {
   display: inline-block;
   text-align: center;
@@ -448,11 +434,26 @@ input:focus {
   /*letter-spacing: 1px;
             text-decoration: none;*/
   /*background: -webkit-linear-gradient(top, #876cb9 0%, #6542a4 100%);*/
-  background: yellowgreen;
+  background: #9acd32;
 }
 
+/* change to gradient color rather than image - more responsive */
+
+
+.navbar {
+  background: rgb(215, 244, 216)
+    linear-gradient(
+      193deg,
+      rgba(168, 162, 182, 1) 4%,
+      rgba(161, 222, 149, 1) 30%,
+      rgba(101, 66, 164, 1) 57%,
+      rgb(124, 158, 125) 94%
+    );
+}
+
+/* origianl image for nav bar */
 .isearch-bg {
-  background: URL('assets/images/ApplicationHeader.jpg') no-repeat top center;
+  /* background: URL('assets/images/ApplicationHeader.jpg') no-repeat top center; */
   /***
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -462,8 +463,8 @@ input:focus {
   /* has spaces on sides */
   /*background-size: contain; big spaces on sides */
   /* background-size: auto; same as cover */
-  background-size: 100%;
-  width: 100%;
+  /* background-size: 100%; */
+  /* width: 100%; */
 }
 /* modify ng-bootstrap styles - NOT working globally?*/
 :host ::ng-deep .tabset1 {
@@ -635,11 +636,11 @@ nav[_ngcontent-qaq-c133] a.active[_ngcontent-qaq-c133] {
 }
 
 /* archive, trash, import, share buttons */
-.ExtraButtons2[_ngcontent-qaq-c133] {
+/* .ExtraButtons2[_ngcontent-qaq-c133] {
   width: 100px;
   margin: 5px;
   flex: none;
-}
+} */
 
 .Results[_ngcontent-qaq-c133] {
   flex: 1 1 auto;
@@ -1091,16 +1092,6 @@ button.clear[_ngcontent-qaq-c114] {
   cursor: hand;
 }
 
-/* .note-pad:hover {
-  background-color: #7bac10;
-  cursor: pointer;
-} */
-
-/* .note-pad:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
-   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-} */
-
 button[_ngcontent-qaq-c114]:hover {
   background-color: #cfd8dc;
 }
@@ -1142,6 +1133,12 @@ footer[_ngcontent-qaq-c136] {
 }
 
 .search-action-container {
+  /* justify-content: center; */
+  display: none;
+}
+
+.search-title:hover + .search-action-container {
+  display: flex;
   justify-content: center;
 }
 
@@ -1152,18 +1149,19 @@ footer[_ngcontent-qaq-c136] {
 }
 
 .search-action-btn:hover {
-  /* color: var(--main-purple); */
+  color: var(--main-purple);
   text-decoration: underline;
+  margin-top: 5px;
 }
 
-.search-action-btn-active {
+/* .search-action-btn-active {
   margin-top: 5px;
   color: #fff;
-}
+} */
 
-.search-action-btn-active:hover {
+/* .search-action-btn-active:hover {
   text-decoration: underline;
-}
+} */
 
 .queryBox[_ngcontent-qaq-c134] {
   flex: none;
@@ -1180,6 +1178,7 @@ footer[_ngcontent-qaq-c136] {
 .list-group-item.active[_ngcontent-qaq-c134] {
   z-index: 2;
   color: #fff;
+  /* background-color: #fff; */
   background-color: var(--main-purple);
   border-color: var(--main-purple);
 }
@@ -1227,3 +1226,7 @@ footer[_ngcontent-qaq-c136] {
 }
 
 /* move import button */
+
+/* nav gradient */
+/* background: rgb(146,227,144);
+background: linear-gradient(90deg, rgba(146,227,144,1) 2%, rgba(231,247,232,1) 15%, rgba(155,237,172,1) 38%, rgba(104,204,135,1) 58%, rgba(209,237,224,1) 74%, rgba(149,63,231,1) 100%); */
