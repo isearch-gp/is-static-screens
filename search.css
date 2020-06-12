@@ -178,7 +178,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
 
 .Search {
   height: 60px;
-  max-width: 88%;
+  max-width: 75%;
   width: auto;
   margin-bottom: 5px;
   /* margin: 5px; */
@@ -190,9 +190,9 @@ WebKit inertia scrolling is being added here for any present/future devices that
 .Map {
   display: flex;
   height: 155px;
-  max-width: 100%;
-  width: auto;
-  margin: 5px;
+  /* max-width: 95%; */
+  /* width: auto; */
+  margin: 8px;
   border: 1px solid #d3d3d3;
 }
 
@@ -236,22 +236,23 @@ WebKit inertia scrolling is being added here for any present/future devices that
     -ms-overflow-style: none;
     **/
 }
+
 /* global Scrollbar styles */
 ::-webkit-scrollbar {
   width: 12px;
   height: 0px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px olivedrab;
+  box-shadow: inset 0 0 10px rgba(168, 162, 182, 1);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: yellowgreen;
+  background: rgba rgba(168, 162, 182, 1);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #7bac10;
+  background: rgba(168, 162, 182, 1);
 }
 
 /* html {
@@ -284,27 +285,67 @@ body::-webkit-scrollbar-thumb {
 
 /* global purple and green color buttons and text */
 /* import, share, archive, trash */
-.p-btn {
+/* Not being used right now */
+/* .p-btn {
   margin-left: 6px;
   display: inline-block;
   text-align: center;
   vertical-align: top;
   text-transform: uppercase;
   color: #fff;
-  /* border-radius: 4px; */
   border-radius: 20px;
   font-weight: 500;
   font-size: 14px;
   width: 100px;
-  /* padding: 4px 19px; */
   letter-spacing: 1px;
   text-decoration: none;
   background: var(--btn-color);
+} */
+
+.import-btn {
+  margin-top: 2px;
+  margin-left: 50px;
+  color: #fff;
+  background: var(--main-purple);
+  border-radius: 20px;
+  padding: 4px 10px;
+}
+
+.import-btn:hover {
+  border-radius: 20px;
+  color: #fff;
+  background: var(--main-purple);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search-input {
-  margin-left: 10px;
+  margin-left: 50px;
   /* border-bottom: 2px solid #6542a4; */
+}
+
+/* box around notes panel - too much going on with a border */
+.note-box {
+  /* border-style: ridge; */
+  /* border-width: thick; */
+  /* display: none; */
+}
+
+/* notes side panel - open when notes button clicked */
+.notes-side-panel {
+  padding: 10px;
+  border-style: ridge;
+  margin: 5px;
+}
+
+.side-panel-btn {
+  color: var(--main-purple);
+  padding: 0px 8px;
+  margin-bottom: 5px;
+}
+
+#hide-note-panel {
+  display: none;
 }
 
 /* note buttons in search results table */
@@ -312,6 +353,7 @@ body::-webkit-scrollbar-thumb {
   /* background-color: #ece7e6; */
   padding: 0px;
   border-radius: 10px;
+  color: var(--main-purple);
 }
 
 .note-btn:hover {
@@ -320,6 +362,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: var(--main-purple);
 }
 
 .p-btn[disabled] {
@@ -438,7 +481,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* change to gradient color rather than image - more responsive */
-
 
 .navbar {
   background: rgb(215, 244, 216)
@@ -1118,10 +1160,21 @@ footer[_ngcontent-qaq-c136] {
   line-height: 10px;
 }
 
+#hide-query-btn {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
 .search-note-btn {
   color: var(--main-purple);
   padding: 0px 8px;
+
   /* margin-bottom: 3px; */
+}
+
+.search-note-btn:hover {
+  color: var(--main-purple);
 }
 
 .search-note-btn-active {
@@ -1213,15 +1266,14 @@ footer[_ngcontent-qaq-c136] {
 }
 
 /* 13 inch laptop */
-@media only screen and (max-width: 800px) and (max-height: 1280px) {
-}
+/* @media only screen and (max-width: 800px) and (max-height: 1280px) {
+} */
 
 /* 15 inch laptop */
-@media only screen and (max-width: 1800px) and (max-height: 2880px) {
-}
+/* @media only screen and (max-width: 1800px) and (max-height: 2880px) {
+} */
 
 /* 27 inch external monitor */
 /* 1680 x 907 */
-@media only screen and (max-width: 2880px) and (max-height: 5120px) {
-}
-
+/* @media only screen and (max-width: 2880px) and (max-height: 5120px) {
+} */
