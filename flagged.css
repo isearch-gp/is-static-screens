@@ -47,6 +47,25 @@
 }
 **/
 /** ./client/styles/shared/github-icons.less **/
+
+
+/* Variables */
+:root {
+  --tool-tip-color: darkgreen;
+  --btn-color: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
+  --main-purple: #6542a4;
+}
+
+/* main-font */
+/* result-header-font-color */
+/* main-font-size */
+/* main-font-color */
+/* tool-tip-color ✅  */
+/* note-btn-color */
+/* btn-color ✅  */
+/* main-green */
+
+
 .icon-result-flagged {
   /**
     background:URL('assets/images/red-flagged-24.png') no-repeat 5% 5%;
@@ -333,8 +352,48 @@ WebKit inertia scrolling is being added here for any present/future devices that
   /*background: -webkit-linear-gradient(top, #876cb9 0%, #6542a4 100%);*/
   background: yellowgreen;
 }
+
+.navbar {
+  background: rgb(215, 244, 216)
+    linear-gradient(
+      193deg,
+      rgba(168, 162, 182, 1) 4%,
+      rgba(161, 222, 149, 1) 30%,
+      rgba(101, 66, 164, 1) 57%,
+      rgb(124, 158, 125) 94%
+    );
+}
+
+.brand {
+  height: 70px;
+}
+
+.brand:hover {
+  border-bottom: 2px solid var(--main-purple);
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.nav-pills .nav-link {
+  color: var(--main-purple);
+  margin-left: 8px;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--main-purple);
+  background-color: #fff;
+  border-bottom: 2px solid var(--main-purple);
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid var(--main-purple);
+
+}
+
 .isearch-bg {
-  background: URL('assets/images/ApplicationHeader.jpg') no-repeat top center;
+  /* background: URL('assets/images/ApplicationHeader.jpg') no-repeat top center; */
   /***
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -344,8 +403,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
   /* has spaces on sides */
   /*background-size: contain; big spaces on sides */
   /* background-size: auto; same as cover */
-  background-size: 100%;
-  width: 100%;
+  /* background-size: 100%; */
+  /* width: 100%; */
 }
 /* modify ng-bootstrap styles - NOT working globally?*/
 :host ::ng-deep .tabset1 {
