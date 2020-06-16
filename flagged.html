@@ -1,814 +1,1484 @@
 <!DOCTYPE html>
 <!-- saved from url=(0029)http://localhost:4200/flagged -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>GpAngular2</title>
-    <!--<base href="/">--><base href=".">
+<html lang="en">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
-    <link rel=" icon" href="http://localhost:4200/assets/images/iS_LOGO_CMYK-2-125x125.png" sizes="32x32">
-    <link rel="icon" href="http://localhost:4200/assets/images/iS_LOGO_CMYK-2.png" sizes="192x192">
-    <link rel="apple-touch-icon-precomposed" href="http://localhost:4200/assets/images/iS_LOGO_CMYK-2.png">
-    <meta name="msapplication-TileImage" content="assets/images/iS_LOGO_CMYK-2.png">
-    <!--
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>GpAngular2</title>
+  <!--<base href="/">-->
+  <base href=".">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
+  <link rel=" icon" href="http://localhost:4200/assets/images/iS_LOGO_CMYK-2-125x125.png" sizes="32x32">
+  <link rel="icon" href="http://localhost:4200/assets/images/iS_LOGO_CMYK-2.png" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="http://localhost:4200/assets/images/iS_LOGO_CMYK-2.png">
+  <meta name="msapplication-TileImage" content="assets/images/iS_LOGO_CMYK-2.png">
+  <!--
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     -->
-    <!--
+  <!--
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-SuperRandom'; font-src https://themes.googleusercontent.com ">
     -->
-    <!-- https://stackoverflow.com/questions/18447970/content-security-policy-data-not-working-for-base64-images-in-chrome-28 -->
-    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; font-src &#39;self&#39; data: fonts.googleapis.com; style-src &#39;self&#39; &#39;unsafe-inline&#39; data: fonts.googleapis.com; connect-src *; img-src &#39;self&#39; data:; frame-src *;">
+  <!-- https://stackoverflow.com/questions/18447970/content-security-policy-data-not-working-for-base64-images-in-chrome-28 -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; font-src &#39;self&#39; data: fonts.googleapis.com; style-src &#39;self&#39; &#39;unsafe-inline&#39; data: fonts.googleapis.com; connect-src *; img-src &#39;self&#39; data:; frame-src *;">
 
-    <!--
+  <!--
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; font-src 'self' data:; style-src 'self' 'unsafe-inline' data: ; connect-src *; img-src 'self' data:; frame-src *;">
     -->
 
-<!--
+  <!--
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
 -->
-    <link href="bootstrap.css" rel="stylesheet">
-    <link href="flagged.css" rel="stylesheet">
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="flagged.css" rel="stylesheet">
 
-	</head>
+</head>
 
 <body>
-    <app-root _nghost-qaq-c115="" ng-version="9.1.2"><router-outlet _ngcontent-qaq-c115=""></router-outlet><app-flagged-page _nghost-qaq-c126=""><div _ngcontent-qaq-c126="" class="Top"><app-header _ngcontent-qaq-c126="" _nghost-qaq-c135=""><nav _ngcontent-qaq-c135="" ngbnavbar="" class="navbar navbar-expand-md isearch-bg"><a _ngcontent-qaq-c135="" href="http://localhost:4200/#" class="navbar-brand"><img _ngcontent-qaq-c135="" src="./GpAngular2flagged_files/IterativeSearch_LOGO_RGB.png" i="" height="70px"></a><button _ngcontent-qaq-c135="" data-toggle="collapse" type="button" aria-controls="navbarContent" aria-label="Toggle navigation" class="navbar-toggler ml-auto custom-toggler" aria-expanded="false"><span _ngcontent-qaq-c135="" class="navbar-toggler-icon"></span></button><div _ngcontent-qaq-c135="" id="navbarContent" class="navbar-collapse justify-content-end collapse"><div _ngcontent-qaq-c135="" class="navbar-nav"><div _ngcontent-qaq-c135="" class="nav-item dropdown"><div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135="" aria-haspopup="true" id="dropdownMenu1" ngbdropdowntoggle="" class="dropdown-toggle nav-link" aria-expanded="false">Settings</a><div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu1" class="dropdown-menu"><button _ngcontent-qaq-c135="" class="dropdown-item">Settings</button><button _ngcontent-qaq-c135="" class="dropdown-item disabled">Feedback</button><button _ngcontent-qaq-c135="" class="dropdown-item">About</button></div></div></div></div><div _ngcontent-qaq-c135="" class="nav-item dropdown"><div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135="" aria-haspopup="true" id="dropdownMenu2" ngbdropdowntoggle="" class="dropdown-toggle nav-link" aria-expanded="false"> Profile</a><div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu2" class="dropdown-menu"><button _ngcontent-qaq-c135="" class="dropdown-item disabled">My Account</button><button _ngcontent-qaq-c135="" class="dropdown-item">Clear Data</button><button _ngcontent-qaq-c135="" class="dropdown-item disabled">Log Out</button></div></div></div></div></nav></app-header></div><section _ngcontent-qaq-c126="" id="container" class="Container"><div _ngcontent-qaq-c126="" class="Query"><ngb-tabset _ngcontent-qaq-c126="" activeid="flagged" type="pills" class="tabset2" ng-reflect-active-id="flagged" ng-reflect-type="pills"><ul role="tablist" class="justify-content-start nav nav-pills"><li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="active" aria-selected="false" aria-disabled="false"> Active<!--bindings={
-  "ng-reflect-ng-template-outlet": null
-}--></a></li><li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="archive" aria-selected="false" aria-disabled="false"> Archive<!--bindings={
-  "ng-reflect-ng-template-outlet": null
-}--></a></li><li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link active" id="flagged" aria-controls="flagged-panel" aria-selected="true" aria-disabled="false"> Flagged<!--bindings={
-  "ng-reflect-ng-template-outlet": null
-}--></a></li><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></ul><div class="tab-content"><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div role="tabpanel" class="active tab-pane" id="flagged-panel" aria-labelledby="flagged"><div _ngcontent-qaq-c126="" class="Query2"><app-flagged-queries _ngcontent-qaq-c126="" _nghost-qaq-c124=""><h4 _ngcontent-qaq-c124="">&nbsp;&nbsp;Search Terms&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Date</h4><div _ngcontent-qaq-c124="" class="queryBox"><div _ngcontent-qaq-c124="" class="row"><div _ngcontent-qaq-c124="" class="col"><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">coronavirus</span><span _ngcontent-qaq-c124="" class="float-right-date">2020-03-04</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">corona virus</span><span _ngcontent-qaq-c124="" class="float-right-date">2020-03-04</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">junk</span><span _ngcontent-qaq-c124="" class="float-right-date">2020-02-22</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">junk - Wiktionary</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">junk - Urban Dictionary</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Junk - definition of junk by The Free Diction</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">sinking ships</span><span _ngcontent-qaq-c124="" class="float-right-date">2020-02-18</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
-  "ng-reflect-ng-if": "ship 1"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Navy tries to save sinking ship - YouTube</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Fatal Ship Collision - Disaster - Ships Sinki</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
-  "ng-reflect-ng-if": "ship 3 hahaha\n"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Top 5 Sinking Ship (Scary Footage) - YouTube</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">carvana</span><span _ngcontent-qaq-c124="" class="float-right-date">2020-02-05</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Carvana | Buy &amp; Finance Used Cars Online | Sk</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Carvana - Wikipedia</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">cars</span><span _ngcontent-qaq-c124="" class="float-right-date">2019-07-12</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
-  "ng-reflect-ng-if": "new and used and new again"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" class="flagged-result-list2 list-group-item active"><span _ngcontent-qaq-c124="" class="text-left">New Cars, Used Cars, Car Dealers, Prices &amp; Re</span></a></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
-  "ng-reflect-ng-if": "new"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale - CarMax</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
-  "ng-reflect-ng-if": "newish"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">New Cars For Sale. Find new cars in your area</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">New Cars, Used Cars - Find Cars for Sale and </span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Carvana Used Cars | Buy Cars Online | Delover</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">TrueCar: Car Prices, Owner Reviews &amp; Inventor</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Cars For Sale - Used Cars For Sale - Used Car</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Auto.com: Used Cars and New Cars</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">New Cars For Sale and Used Cars for Sale | Au</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free CARFAX</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">good cats</span><span _ngcontent-qaq-c124="" class="float-right-date">2019-02-01</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">10 Best Cat Breeds for Families</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Dogs That Are Good With Cats: Breeds That Ten</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">kittens</span><span _ngcontent-qaq-c124="" class="float-right-date">2019-01-21</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right" tooltipclass="note-tooltip" container="body" class="float-right n-btn-active btn-outline-secondary" ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button><!--container--><!--bindings={
-  "ng-reflect-ng-if": "good kittens"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Healthy Cats Guide: Caring for Your Kitten - </span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Kitten - Wikipedia</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">How Old is that Kitten? Kitten Guide: One Wee</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span _ngcontent-qaq-c124="" class="text-left">malpractice</span><span _ngcontent-qaq-c124="" class="float-right-date">2019-01-31</span></a><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">What is Malpractice?</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">10 Things You Want To Know About Medical Malp</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--container--><!--container--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": ""
-}--><button _ngcontent-qaq-c124="" class="float-right n-btn btn-outline-secondary">N</button><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><a _ngcontent-qaq-c124="" data-toggle="list" placement="right" tooltipclass="result-tooltip" container="body" class="flagged-result-list2 list-group-item" ng-reflect-placement="right" ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124="" class="text-left">Malpractice - Wikipedia</span></a><!--container--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><div _ngcontent-qaq-c124=""><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></div><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div></div></div><!--container--></app-flagged-queries></div><!--bindings={
-  "ng-reflect-ng-template-outlet": "[object Object]"
-}--></div><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><!--bindings={
-  "ng-reflect-ng-for-of": "[object Object],[object Object"
-}--></div></ngb-tabset></div><div _ngcontent-qaq-c126="" class="MiddleContainer"><div _ngcontent-qaq-c126="" class="Results"><app-flagged-result _ngcontent-qaq-c126="" _nghost-qaq-c125=""><!--container--><div _ngcontent-qaq-c125="" class="row"><div _ngcontent-qaq-c125="" class="col"><table _ngcontent-qaq-c125="" class="table table-hover"></table></div></div><div _ngcontent-qaq-c125="" class="row"><div _ngcontent-qaq-c125="" class="col"><a _ngcontent-qaq-c125="" class="card-flag-icon ng-scope"><img _ngcontent-qaq-c125="" aria-hidden="true" src="./GpAngular2flagged_files/blank.gif" class="icon-result-flagged ng-scope"><!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></a><span _ngcontent-qaq-c125="" class="flagged-result-url">&nbsp;https://www.cars.com/&nbsp;&nbsp;</span><a _ngcontent-qaq-c125="" target="_blank" class="p-btn btn btn-sm" href="https://www.cars.com/">Open this Page&nbsp;</a><!--container--><a _ngcontent-qaq-c125="" placement="bottom" tooltipclass="note-tooltip" container="body" class="g-btn-active btn btn-sm btn-outline-secondary" ng-reflect-placement="bottom" ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">Notes&nbsp;</a><!--container--><!--bindings={
-  "ng-reflect-ng-if": "new and used and new again"
-}--><!--bindings={
-  "ng-reflect-ng-if": "false"
-}--><div _ngcontent-qaq-c125="" class="iframe-container"><iframe _ngcontent-qaq-c125="" width="100%" allowtransparency="true" frameborder="0" sandbox="allow-same-origin" class="frame" src="./GpAngular2flagged_files/saved_resource.html"> Webpage blocked loading due to their security settings.<br _ngcontent-qaq-c125=""> Use the Open This Page button to see webpage in a new tab. </iframe></div></div></div></app-flagged-result></div><div _ngcontent-qaq-c126="" class="Map"><div _ngcontent-qaq-c126="" class="Map2 col-10 border border-primary"><app-map _ngcontent-qaq-c126="" _nghost-qaq-c137=""><div _ngcontent-qaq-c137="" class="bmapBox"><img _ngcontent-qaq-c137="" src="./GpAngular2flagged_files/2020-02-03_750x150.png" class="img"></div></app-map></div></div></div></section><div _ngcontent-qaq-c126="" class="Bottom"><app-messages _ngcontent-qaq-c126="" _nghost-qaq-c114=""><!--bindings={
-  "ng-reflect-ng-if": "0"
-}--></app-messages><app-footer _ngcontent-qaq-c126="" _nghost-qaq-c136=""><footer _ngcontent-qaq-c136=""><p _ngcontent-qaq-c136=""><span _ngcontent-qaq-c136="" class="float-left">&nbsp;&nbsp;Version;&nbsp;0.9.8</span><span _ngcontent-qaq-c136="" class="text-xs-center">Copyright © 2020. <a _ngcontent-qaq-c136="" href="http://iterativesearch.com/" target="_blank">IterativeSearch</a> All rights reserved.</span></p></footer></app-footer></div></app-flagged-page><!--container--><ng-http-loader _ngcontent-qaq-c115="" spinner="sk-wave" _nghost-qaq-c49="" ng-reflect-spinner="sk-wave"><!--bindings={
-  "ng-reflect-ng-if": null
-}--></ng-http-loader></app-root>
-<!--
+  <app-root _nghost-qaq-c115="" ng-version="9.1.2">
+    <router-outlet _ngcontent-qaq-c115=""></router-outlet>
+    <app-flagged-page _nghost-qaq-c126="">
+      <div _ngcontent-qaq-c126="" class="Top">
+        <app-header _ngcontent-qaq-c126="" _nghost-qaq-c135="">
+          <nav _ngcontent-qaq-c135="" ngbnavbar="" class="navbar navbar-expand-md isearch-bg">
+            <a _ngcontent-qaq-c135="" href="http://localhost:4200/#" class="navbar-brand">
+              <img _ngcontent-qaq-c135="" src="./GpAngular2flagged_files/IterativeSearch_LOGO_RGB.png" i=""
+                height="70px"></a>
+            <button _ngcontent-qaq-c135="" data-toggle="collapse" type="button" aria-controls="navbarContent"
+              aria-label="Toggle navigation" class="navbar-toggler ml-auto custom-toggler" aria-expanded="false">
+              <span _ngcontent-qaq-c135="" class="navbar-toggler-icon"></span>
+            </button>
+            <div _ngcontent-qaq-c135="" id="navbarContent" class="navbar-collapse justify-content-end collapse">
+              <div _ngcontent-qaq-c135="" class="navbar-nav">
+                <div _ngcontent-qaq-c135="" class="nav-item dropdown">
+                  <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown"><a _ngcontent-qaq-c135=""
+                      aria-haspopup="true" id="dropdownMenu1" ngbdropdowntoggle="" class="dropdown-toggle nav-link"
+                      aria-expanded="false">Settings</a>
+                    <div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu1"
+                      class="dropdown-menu">
+                      <button _ngcontent-qaq-c135="" class="dropdown-item">Settings</button>
+                      <button _ngcontent-qaq-c135="" class="dropdown-item disabled">Feedback</button>
+                      <button _ngcontent-qaq-c135="" class="dropdown-item">About</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div _ngcontent-qaq-c135="" class="nav-item dropdown">
+                <div _ngcontent-qaq-c135="" ngbdropdown="" class="dropdown">
+                  <a _ngcontent-qaq-c135="" aria-haspopup="true" id="dropdownMenu2" ngbdropdowntoggle=""
+                    class="dropdown-toggle nav-link" aria-expanded="false"> Profile</a>
+                  <div _ngcontent-qaq-c135="" ngbdropdownmenu="" aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                    <button _ngcontent-qaq-c135="" class="dropdown-item disabled">My Account</button>
+                    <button _ngcontent-qaq-c135="" class="dropdown-item">Clear Data</button>
+                    <button _ngcontent-qaq-c135="" class="dropdown-item disabled">Log Out</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </app-header>
+      </div>
+      <section _ngcontent-qaq-c126="" id="container" class="Container">
+        <div _ngcontent-qaq-c126="" class="Query">
+          <ngb-tabset _ngcontent-qaq-c126="" activeid="flagged" type="pills" class="tabset2"
+            ng-reflect-active-id="flagged" ng-reflect-type="pills">
+            <ul role="tablist" class="justify-content-start nav nav-pills">
+              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="active"
+                  aria-selected="false" aria-disabled="false"> Active</a></li>
+              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link" id="archive"
+                  aria-selected="false" aria-disabled="false"> Archive
+                </a></li>
+              <li class="nav-item"><a href="http://localhost:4200/" role="tab" class="nav-link active" id="flagged"
+                  aria-controls="flagged-panel" aria-selected="true" aria-disabled="false"> Flagged
+                </a></li>
+
+            </ul>
+            <div class="tab-content">
+
+
+              <div role="tabpanel" class="active tab-pane" id="flagged-panel" aria-labelledby="flagged">
+                <div _ngcontent-qaq-c126="" class="Query2">
+                  <app-flagged-queries _ngcontent-qaq-c126="" _nghost-qaq-c124="">
+                    <h4 _ngcontent-qaq-c124="">&nbsp;&nbsp;Search Terms&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Date</h4>
+                    <div _ngcontent-qaq-c124="" class="queryBox">
+                      <div _ngcontent-qaq-c124="" class="row">
+                        <div _ngcontent-qaq-c124="" class="col">
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">coronavirus</span><span
+                                  _ngcontent-qaq-c124="" class="float-right-date">2020-03-04</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124="">
+                              <a _ngcontent-qaq-c124="" class="list-group-item-q">
+                                <span _ngcontent-qaq-c124="" class="text-left">corona virus</span>
+                                <span _ngcontent-qaq-c124="" class="float-right-date">2020-03-04</span>
+                              </a>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">junk</span><span _ngcontent-qaq-c124=""
+                                  class="float-right-date">2020-02-22</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">junk - Wiktionary</span></a>
+
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">junk - Urban Dictionary</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Junk - definition of junk by The Free Diction</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">sinking ships</span><span
+                                  _ngcontent-qaq-c124="" class="float-right-date">2020-02-18</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right"
+                                      tooltipclass="note-tooltip" container="body"
+                                      class="float-right n-btn-active btn-outline-secondary"
+                                      ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip"
+                                      ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Navy tries to save sinking ship - YouTube</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Fatal Ship Collision - Disaster - Ships Sinki</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right"
+                                      tooltipclass="note-tooltip" container="body"
+                                      class="float-right n-btn-active btn-outline-secondary"
+                                      ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip"
+                                      ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Top 5 Sinking Ship (Scary Footage) - YouTube</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">carvana</span><span _ngcontent-qaq-c124=""
+                                  class="float-right-date">2020-02-05</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Carvana | Buy &amp; Finance Used Cars Online | Sk</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Carvana - Wikipedia</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">cars</span><span _ngcontent-qaq-c124=""
+                                  class="float-right-date">2019-07-12</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+                                  <div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right"
+                                      tooltipclass="note-tooltip" container="body"
+                                      class="float-right n-btn-active btn-outline-secondary"
+                                      ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip"
+                                      ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list"
+                                      class="flagged-result-list2 list-group-item active"><span _ngcontent-qaq-c124=""
+                                        class="text-left">New Cars, Used Cars, Car Dealers,
+                                        Prices &amp; Re</span></a></div>
+                                </div>
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right"
+                                      tooltipclass="note-tooltip" container="body"
+                                      class="float-right n-btn-active btn-outline-secondary"
+                                      ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip"
+                                      ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button>
+
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale - CarMax</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right"
+                                      tooltipclass="note-tooltip" container="body"
+                                      class="float-right n-btn-active btn-outline-secondary"
+                                      ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip"
+                                      ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">New Cars For Sale. Find new cars in your area</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">New Cars, Used Cars - Find Cars for Sale and </span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Carvana Used Cars | Buy Cars Online | Delover</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">TrueCar: Car Prices, Owner Reviews &amp; Inventor</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Cars For Sale - Used Cars For Sale - Used Car</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Auto.com: Used Cars and New Cars</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">New Cars For Sale and Used Cars for Sale | Au</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]">
+                                      <span _ngcontent-qaq-c124="" class="text-left">Used Cars for Sale | with Free
+                                        CARFAX</span>
+                                    </a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Used Cars for Sale | with Free CARFAX</span></a>
+
+                                  </div>
+
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">good cats</span><span _ngcontent-qaq-c124=""
+                                  class="float-right-date">2019-02-01</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">10 Best Cat Breeds for Families</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Dogs That Are Good With Cats: Breeds That Ten</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">kittens</span><span _ngcontent-qaq-c124=""
+                                  class="float-right-date">2019-01-21</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124=""><button _ngcontent-qaq-c124="" placement="right"
+                                      tooltipclass="note-tooltip" container="body"
+                                      class="float-right n-btn-active btn-outline-secondary"
+                                      ng-reflect-placement="right" ng-reflect-tooltip-class="note-tooltip"
+                                      ng-reflect-container="body" ng-reflect-ngb-tooltip="[object Object]">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Healthy Cats Guide: Caring for Your Kitten - </span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Kitten - Wikipedia</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">How Old is that Kitten? Kitten Guide: One Wee</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+                            <div _ngcontent-qaq-c124=""><a _ngcontent-qaq-c124="" class="list-group-item-q"><span
+                                  _ngcontent-qaq-c124="" class="text-left">malpractice</span><span
+                                  _ngcontent-qaq-c124="" class="float-right-date">2019-01-31</span></a>
+                              <div _ngcontent-qaq-c124="">
+
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">What is Malpractice?</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">10 Things You Want To Know About Medical Malp</span></a>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div _ngcontent-qaq-c124="">
+
+                                <div _ngcontent-qaq-c124="">
+
+                                  <div _ngcontent-qaq-c124="">
+                                    <button _ngcontent-qaq-c124=""
+                                      class="float-right n-btn btn-outline-secondary">N</button>
+                                    <a _ngcontent-qaq-c124="" data-toggle="list" placement="right"
+                                      tooltipclass="result-tooltip" container="body"
+                                      class="flagged-result-list2 list-group-item" ng-reflect-placement="right"
+                                      ng-reflect-tooltip-class="result-tooltip" ng-reflect-container="body"
+                                      ng-reflect-ngb-tooltip="[object Object]"><span _ngcontent-qaq-c124=""
+                                        class="text-left">Malpractice - Wikipedia</span></a>
+
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </div>
+
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+                          <div _ngcontent-qaq-c124="">
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </app-flagged-queries>
+                </div>
+
+              </div>
+
+            </div>
+          </ngb-tabset>
+        </div>
+        <div _ngcontent-qaq-c126="" class="MiddleContainer">
+          <div _ngcontent-qaq-c126="" class="Results">
+            <app-flagged-result _ngcontent-qaq-c126="" _nghost-qaq-c125="">
+
+              <div _ngcontent-qaq-c125="" class="row">
+                <div _ngcontent-qaq-c125="" class="col">
+                  <table _ngcontent-qaq-c125="" class="table table-hover"></table>
+                </div>
+              </div>
+              <div _ngcontent-qaq-c125="" class="row">
+                <div _ngcontent-qaq-c125="" class="col">
+                  <a _ngcontent-qaq-c125="" class="card-flag-icon ng-scope">
+                    <img _ngcontent-qaq-c125="" aria-hidden="true" src="./GpAngular2flagged_files/blank.gif"
+                      class="icon-result-flagged ng-scope">
+                  </a>
+                  <span _ngcontent-qaq-c125="" class="flagged-result-url">&nbsp;https://www.cars.com/&nbsp;&nbsp;</span>
+                  <a _ngcontent-qaq-c125="" target="_blank" class="p-btn btn btn-sm" href="https://www.cars.com/">Open
+                    this Page&nbsp;</a>
+                  <a _ngcontent-qaq-c125="" placement="bottom" tooltipclass="note-tooltip" container="body"
+                    class="g-btn-active btn btn-sm btn-outline-secondary" ng-reflect-placement="bottom"
+                    ng-reflect-tooltip-class="note-tooltip" ng-reflect-container="body"
+                    ng-reflect-ngb-tooltip="[object Object]">Notes&nbsp;</a>
+                  <div _ngcontent-qaq-c125="" class="iframe-container">
+                    <iframe _ngcontent-qaq-c125="" width="100%" allowtransparency="true" frameborder="0"
+                      sandbox="allow-same-origin" class="frame" src="./GpAngular2flagged_files/saved_resource.html">
+                      Webpage blocked loading due to their security
+                      settings.
+                      <br _ngcontent-qaq-c125=""> Use the Open This Page button to see webpage in a new tab.
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </app-flagged-result>
+          </div>
+          <div _ngcontent-qaq-c126="" class="Map">
+            <div _ngcontent-qaq-c126="" class="Map2 col-10 border border-primary">
+              <app-map _ngcontent-qaq-c126="" _nghost-qaq-c137="">
+                <div _ngcontent-qaq-c137="" class="bmapBox">
+                  <img _ngcontent-qaq-c137="" src="./GpAngular2flagged_files/2020-02-03_750x150.png" class="img">
+                </div>
+              </app-map>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div _ngcontent-qaq-c126="" class="Bottom">
+        <app-messages _ngcontent-qaq-c126="" _nghost-qaq-c114="">
+
+
+        </app-messages>
+        <app-footer _ngcontent-qaq-c126="" _nghost-qaq-c136="">
+          <!-- <footer _ngcontent-qaq-c136="">
+            <p _ngcontent-qaq-c136=""><span _ngcontent-qaq-c136=""
+                class="float-left">&nbsp;&nbsp;Version;&nbsp;0.9.8</span><span _ngcontent-qaq-c136=""
+                class="text-xs-center">Copyright © 2020. <a _ngcontent-qaq-c136="" href="http://iterativesearch.com/"
+                  target="_blank">IterativeSearch</a> All rights reserved.</span></p>
+          </footer> -->
+        </app-footer>
+      </div>
+    </app-flagged-page>
+
+    <ng-http-loader _ngcontent-qaq-c115="" spinner="sk-wave" _nghost-qaq-c49="" ng-reflect-spinner="sk-wave">
+
+    </ng-http-loader>
+  </app-root>
+  <!--
 <script src="./GpAngular2flagged_files/runtime.js.download" defer=""></script><script src="./GpAngular2flagged_files/polyfills-es5.js.download" nomodule="" defer=""></script><script src="./GpAngular2flagged_files/polyfills.js.download" defer=""></script><script src="./GpAngular2flagged_files/styles.js.download" defer=""></script><script src="./GpAngular2flagged_files/vendor.js.download" defer=""></script><script src="./GpAngular2flagged_files/main.js.download" defer=""></script>
 -->
-</body></html>
+</body>
+
+</html>
