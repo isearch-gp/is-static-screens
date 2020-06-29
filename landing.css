@@ -1,0 +1,42 @@
+/* Variables */
+:root {
+  --tool-tip-color: darkgreen;
+  --btn-color: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
+  --main-purple: #6542a4;
+}
+
+.Top {
+  font-size: 2rem;
+  position: relative;
+  z-index: 10;
+  height: 90px;
+}
+
+.navbar {
+  background: rgb(215, 244, 216)
+    linear-gradient(
+      193deg,
+      rgba(168, 162, 182, 1) 4%,
+      rgba(161, 222, 149, 1) 30%,
+      rgba(101, 66, 164, 1) 57%,
+      rgb(124, 158, 125) 94%
+    );
+}
+
+.brand {
+  height: 70px;
+}
+
+.brand:hover {
+  border-bottom: 2px solid var(--main-purple);
+}
+
+.dropdown {
+  margin-right: 3rem;
+}
+
+.dropdown .dropdown-menu a:hover {
+  color: #fff;
+  background-color: var(--main-purple);
+  border-color: #fff;
+}
