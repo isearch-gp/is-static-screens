@@ -40,3 +40,33 @@
   background-color: var(--main-purple);
   border-color: #fff;
 }
+
+.search {
+  text-align: center;
+}
+
+.search-btn {
+  margin-top: 2px;
+  margin-left: 50px;
+  color: #fff;
+  background: var(--main-purple);
+  border-radius: 20px;
+  padding: 4px 10px;
+}
+
+.search-input {
+  margin-top: 15rem;
+  padding: .2rem;
+  border-radius: 50px;
+}
+
+.new-search {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.saved-search {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
