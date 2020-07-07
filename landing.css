@@ -31,6 +31,12 @@
   border-bottom: 2px solid var(--main-purple);
 }
 
+.logo {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  height: 70px;
+}
+
 .dropdown {
   margin-right: 3rem;
 }
@@ -41,28 +47,34 @@
   border-color: #fff;
 }
 
-.search {
+.isearch-logo{
   text-align: center;
 }
 
-.search-btn {
+.search {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* .search-btn {
   margin-top: 2px;
   margin-left: 50px;
   color: #fff;
   background: var(--main-purple);
   border-radius: 20px;
   padding: 4px 10px;
-}
+} */
 
-.search-input {
-  margin-top: 15rem;
-  padding: .2rem;
-  border-radius: 50px;
+.search-input { 
+  padding: 0.2rem;
+  /* border-radius: 50px; */
+  /* border: var(--main-purple); */
 }
 
 .new-search {
   text-align: center;
   margin-top: 2rem;
+  text-decoration: underline;
 }
 
 .saved-search {
