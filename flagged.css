@@ -48,12 +48,12 @@
 **/
 /** ./client/styles/shared/github-icons.less **/
 
-
 /* Variables */
 :root {
   --tool-tip-color: darkgreen;
   --btn-color: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
   --main-purple: #6542a4;
+  --btn-background: yellowgreen;
 }
 
 /* main-font */
@@ -64,7 +64,6 @@
 /* note-btn-color */
 /* btn-color ✅  */
 /* main-green */
-
 
 .icon-result-flagged {
   /**
@@ -85,19 +84,19 @@
 }
 /* note tooltips */
 .note-tooltip .tooltip-inner {
-  background-color: darkgreen;
+  background-color: var(--tool-tip-color);
   font-size: 125%;
 }
 .note-tooltip .arrow::before {
-  border-top-color: darkgreen;
+  border-top-color: var(--tool-tip-color);
 }
 /* result tooltips */
 .result-tooltip .tooltip-inner {
-  background-color: darkgreen;
+  background-color: var(--tool-tip-color);
   font-size: 125%;
 }
 .result-tooltip .arrow::before {
-  border-top-color: darkgreen;
+  border-top-color: var(--tool-tip-color);
 }
 /* Top and Bottom - same for all pages */
 /*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/
@@ -269,7 +268,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
   background: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
 }
 .text-purple {
-  color: #6542a4;
+  color: var(--main-purple);
   /* purple */
   /* color: #876cb9; * light purple */
 }
@@ -278,7 +277,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
   vertical-align: top;
   /*text-transform: uppercase;*/
   /*color: #000; black */
-  color: #6542a4 !important;
+  color: var(--main-purple) !important;
   /* purple */
   border-radius: 4px;
   font-weight: 350;
@@ -304,7 +303,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
   letter-spacing: 1px;
   text-decoration: none;
   /*background: -webkit-linear-gradient(top, #876cb9 0%, #6542a4 100%);*/
-  background: yellowgreen;
+  background: var(--btn-background);
+  margin-bottom: 0.5rem;
 }
 /* note N buttons */
 .n-btn {
@@ -350,7 +350,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
   /*letter-spacing: 1px;
             text-decoration: none;*/
   /*background: -webkit-linear-gradient(top, #876cb9 0%, #6542a4 100%);*/
-  background: yellowgreen;
+  background: var(--btn-background);
 }
 
 .navbar {
@@ -389,7 +389,6 @@ WebKit inertia scrolling is being added here for any present/future devices that
 
 .nav-link:hover {
   border-bottom: 2px solid var(--main-purple);
-
 }
 
 .search-note-btn {
@@ -410,8 +409,6 @@ WebKit inertia scrolling is being added here for any present/future devices that
 .search-title {
   justify-content: space-between;
 }
-
-
 
 .isearch-bg {
   /* background: URL('assets/images/ApplicationHeader.jpg') no-repeat top center; */
@@ -446,15 +443,13 @@ WebKit inertia scrolling is being added here for any present/future devices that
   font-weight: 300;
 }
 .nav-pills .nav-link {
-  color: #6542a4;
+  color: var(--main-purple);
   /* purple */
 }
 .nav-pills .nav-link.active {
-  background-color: #6542a4;
+  background-color: var(--main-purple);
   /* purple */
 }
-
-
 
 h1[_ngcontent-qaq-c115] {
   font-size: 1.2em;
@@ -1013,7 +1008,6 @@ thead[_ngcontent-qaq-c128]
   border-color: #6542a4;
 }
 
-
 /** </style><style> **/
 h2[_ngcontent-qaq-c114] {
   color: red;
@@ -1212,7 +1206,9 @@ nav[_ngcontent-qaq-c126] a.active[_ngcontent-qaq-c126] {
 }
 
 .frame[_ngcontent-qaq-c125] {
-  height: 10000px;
+  /* height: 10000px; */
+  width: 100%;
+  height: 1500px;
 }
 
 .iframe-container[_ngcontent-qaq-c125] {
@@ -1254,7 +1250,8 @@ nav[_ngcontent-qaq-c126] a.active[_ngcontent-qaq-c126] {
 }
 
 .flagged-result-url[_ngcontent-qaq-c125] {
-  color: #54acef;
+  /* color: #54acef; */
+  text-transform: none;
   font-weight: bold;
   margin: -6px 0 0 0;
   padding: 0 0 0 0px;
