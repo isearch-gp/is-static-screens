@@ -1,7 +1,5 @@
 /* Variables */
 :root {
-  --tool-tip-color: darkgreen;
-  --btn-color: linear-gradient(to bottom, #876cb9 0%, #6542a4 100%);
   --main-purple: #6542a4;
 }
 
@@ -12,29 +10,36 @@
   height: 90px;
 }
 
+.border-box {
+  background: rgb(144, 121, 201);
+  background: linear-gradient(
+    135deg,
+    rgba(144, 121, 201, 1) 4%,
+    rgba(178, 238, 118, 1) 17%,
+    rgba(205, 185, 239, 1) 39%,
+    rgba(233, 240, 231, 1) 56%,
+    rgba(126, 209, 83, 1) 72%,
+    rgba(91, 42, 162, 1) 94%
+  );
+  padding-bottom: 0.5rem;
+}
+
 .navbar {
-  background: rgb(215, 244, 216)
-    linear-gradient(
-      193deg,
-      rgba(168, 162, 182, 1) 4%,
-      rgba(161, 222, 149, 1) 30%,
-      rgba(101, 66, 164, 1) 57%,
-      rgb(124, 158, 125) 94%
-    );
+  background: whitesmoke;
 }
 
 .brand {
   height: 70px;
 }
 
-.brand:hover {
-  border-bottom: 2px solid var(--main-purple);
+a:hover {
+  text-decoration: none;
 }
 
 .logo {
   margin-top: 10rem;
   margin-bottom: 1rem;
-  height: 70px;
+  height: 100px;
 }
 
 .dropdown {
@@ -47,7 +52,7 @@
   border-color: #fff;
 }
 
-.isearch-logo{
+.isearch-logo {
   text-align: center;
 }
 
@@ -65,7 +70,7 @@
   padding: 4px 10px;
 } */
 
-.search-input { 
+.search-input {
   padding: 0.2rem;
   /* border-radius: 50px; */
   /* border: var(--main-purple); */
