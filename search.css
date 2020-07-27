@@ -1147,15 +1147,37 @@ button.clear[_ngcontent-qaq-c114] {
   margin-bottom: 12px;
 }
 
+.border-box-footer {
+  background: rgb(144, 121, 201);
+  background: linear-gradient(
+    135deg,
+    rgba(144, 121, 201, 1) 4%,
+    rgba(178, 238, 118, 1) 17%,
+    rgba(205, 185, 239, 1) 39%,
+    rgba(233, 240, 231, 1) 56%,
+    rgba(126, 209, 83, 1) 72%,
+    rgba(91, 42, 162, 1) 94%
+  );
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 35px;
+  /* text-align: center; */
+  /* border-width: 1px; */
+  /* border-top-style: solid; */
+  /* overflow: hidden; */
+  /* line-height: 10px; */
+}
+
 footer[_ngcontent-qaq-c136] {
+  background: whitesmoke;
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding-top: 5px;
   text-align: center;
-  border-width: 1px;
-  border-top-style: solid;
   overflow: hidden;
   line-height: 10px;
 }
