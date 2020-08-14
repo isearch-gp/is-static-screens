@@ -4,7 +4,7 @@
 }
 
 .Top {
-  font-size: 2rem;
+  font-size: 1rem;
   position: relative;
   z-index: 10;
   height: 90px;
@@ -24,7 +24,7 @@
   padding-bottom: 0.5rem;
 }
 
-.navbar {
+.nav-overlay {
   background: whitesmoke;
 }
 
@@ -37,12 +37,12 @@ a:hover {
 }
 
 .logo {
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 1rem;
-  height: 100px;
+  height: 200px;
 }
 
-.dropdown {
+/* .dropdown {
   margin-right: 3rem;
 }
 
@@ -50,7 +50,7 @@ a:hover {
   color: #fff;
   background-color: var(--main-purple);
   border-color: #fff;
-}
+} */
 
 .isearch-logo {
   text-align: center;
@@ -90,4 +90,31 @@ a:hover {
 
 .card {
   margin: 2rem;
+}
+
+/* position footer at bottom of page and will move down based on how much content is on the page */
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+/* overlay for footer - same as nav */
+.footer-overlay {
+  padding: 0.75rem;
+  background: whitesmoke;
+  /* background: rgba(222, 213, 245, 0.75); */
+}
+
+.border-box-footer {
+  background: rgb(144, 121, 201);
+  background: linear-gradient(
+    135deg,
+    rgba(144, 121, 201, 1) 4%,
+    rgba(178, 238, 118, 1) 17%,
+    rgba(205, 185, 239, 1) 39%,
+    rgba(233, 240, 231, 1) 56%,
+    rgba(126, 209, 83, 1) 72%,
+    rgba(91, 42, 162, 1) 94%
+  );
+  padding-top: 0.5rem;
 }
