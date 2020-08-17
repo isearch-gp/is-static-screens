@@ -410,6 +410,29 @@ WebKit inertia scrolling is being added here for any present/future devices that
   justify-content: space-between;
 }
 
+.arrow {
+  border: solid var(--main-purple);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#hide-query-btn {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
 .isearch-bg {
   /* background: URL('assets/images/ApplicationHeader.jpg') no-repeat top center; */
   /***

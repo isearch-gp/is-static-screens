@@ -138,11 +138,14 @@
                         <div _ngcontent-qaq-c124="" class="col">
                           <div class="row search-title-q">
                             <!-- <a _ngcontent-qaq-c124="" class="list-group-item-q"> -->
+                            <span class="" id="hide-flagged-btn">
+                              <i id="toggle-arrow" class="arrow up"></i>
+                            </span>
                             <div _ngcontent-qaq-c124="" class="">junk</div>
                             <div _ngcontent-qaq-c124="" class="">2020-02-22</div>
                             <!-- </a> -->
                           </div>
-                          <div _ngcontent-qaq-c134="">
+                          <div _ngcontent-qaq-c134="" id="hide-flagged-div">
                             <a _ngcontent-qaq-c134="" data-toggle="list" class="query-list list-group-item">
                               <div class="row search-title">
                                 <div _ngcontent-qaq-c134="">Junk</div>
@@ -160,35 +163,10 @@
                                 </div>
                               </div>
 
-                              <!-- <div class="row search-action-container">
-                                <div>
-                                  <button class="btn btn-sm search-action-btn">share
-                                    <svg aria-hidden="true" width="20" height="16" focusable="false" data-prefix="fas" data-icon="share"
-                                      class="svg-inline--fa fa-share fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                      <path fill="currentColor"
-                                        d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z">
-                                      </path>
-                                    </svg>
-                                  </button>
-                                </div>
+
+                              
+                                 
                           
-                                <button class="btn btn-sm search-action-btn">archive
-                                  <svg aria-hidden="true" width="20" height="16" focusable="false" data-prefix="fas" data-icon="archive"
-                                    class="svg-inline--fa fa-archive fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                      d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z">
-                                    </path>
-                                  </svg>
-                                </button>
-                                <button class="btn btn-sm search-action-btn">trash
-                                  <svg aria-hidden="true" width="20" height="16" focusable="false" data-prefix="fas" data-icon="trash-alt"
-                                    class="svg-inline--fa fa-trash-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512">
-                                    <path fill="currentColor"
-                                      d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
-                                    </path>
-                                  </svg></button>
-                              </div> -->
 
                             </a>
 
@@ -1484,8 +1462,8 @@
                   </a>
                   <br>
                   <div _ngcontent-qaq-c125="" class="iframe-container">
-                    <iframe _ngcontent-qaq-c125="" allowtransparency="true" frameborder="0"
-                      sandbox="allow-same-origin" class="frame" src="./GpAngular2flagged_files/saved_resource.html">
+                    <iframe _ngcontent-qaq-c125="" allowtransparency="true" frameborder="0" sandbox="allow-same-origin"
+                      class="frame" src="./GpAngular2flagged_files/saved_resource.html">
                       Webpage blocked loading due to their security
                       settings.
                       <br _ngcontent-qaq-c125=""> Use the Open This Page button to see webpage in a new tab.
@@ -1526,6 +1504,27 @@
 
     </ng-http-loader>
   </app-root>
+  <script>
+    const toggleArrow = document.getElementById("toggle-arrow");
+    const btnHide = document.getElementById("hide-flagged-btn");
+    const queryHide = document.getElementById("hide-flagged-div");
+
+    // toggle class on arrow
+    toggleArrow.addEventListener("click", (event) => {
+      toggleArrow.classList.toggle("down")
+    })
+
+    // Hide query results
+    btnHide.addEventListener("click", () => {
+      if (queryHide.style.display === "none") {
+        queryHide.style.display = "block"
+      }
+      else {
+        queryHide.style.display = "none";
+      }
+    })
+
+  </script>
   <!--
 <script src="./GpAngular2flagged_files/runtime.js.download" defer=""></script><script src="./GpAngular2flagged_files/polyfills-es5.js.download" nomodule="" defer=""></script><script src="./GpAngular2flagged_files/polyfills.js.download" defer=""></script><script src="./GpAngular2flagged_files/styles.js.download" defer=""></script><script src="./GpAngular2flagged_files/vendor.js.download" defer=""></script><script src="./GpAngular2flagged_files/main.js.download" defer=""></script>
 -->

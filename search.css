@@ -1187,6 +1187,7 @@ footer[_ngcontent-qaq-c136] {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+ 
 }
 
 .left {
@@ -1198,6 +1199,10 @@ footer[_ngcontent-qaq-c136] {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+/* #hide-query-div {
+  transition: 0.5s;
+} */
 
 #hide-query-btn {
   margin-left: 5px;
