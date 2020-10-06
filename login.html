@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/02403185ac.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-  
+  <!-- top navigation -->
+  <div class="Top">
+    <div class="border-box">
+
+      <nav class="navbar navbar-expand-lg navbar-light nav-overlay">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#"> <span class="d-inline-block login-nav"></span>
+              Home</a>
+          </div>
+
+        </div>
+      </nav>
+
+    </div>
+  </div>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row text-center login-content">
+      <div class="col-md-4 text-center isearch">
+        <span class="logo">
+          <img class="login-image" src="./assets/images/cirlce-logo.jpg" alt="iSearch Logo">
+        </span>
+      </div>
+      <div class="col-md-8 col-xs-12 col-sm-12 login-form"> 
+        <div class="container">
+          <div class="row">
+            <form action="" class="form-group">
+              <div class="row">
+                <h2>Log In</h2>
+                <input type="text" class="form-control form-input" id="username" placeholder="Username">
+              </div>
+              <div class="row">
+                <input type="text" class="form-control form-input" id="password" placeholder="Password">
+              </div>
+              <div class="row">
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="remeber-me">
+                  <label for="remeber-me" class="form-check-label">Remeber Me!</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="row">
+            <p>Don't have an account? <a href="#">Register Here</a></p>
+          </div>
+          <div class="row">
+            <p>Forgot Password? <a href="#">Password Help</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <!-- <div class="footer border-box-footer">
+    <div class="footer-overlay">
+      <a class="copy" href="#">&copy; 2020
+      </a>
+    </div>
+  </div> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
